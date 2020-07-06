@@ -71,7 +71,7 @@ title: Señales de compra venta para el mercado de valores
                         Tu eliges y configuras cuándo y de quién recibes señales de Compra o Venta,
                     </p>
                     <p>
-                        <a href="#contact">Subscríbete</a> para recibir las señales de los usuarios más exitósos de
+                        <a href="#contact">Subscríbete</a> para recibir las señales de los usuarios más exitosos de
                         Zigna.
                     </p>
                 </div>
@@ -94,7 +94,7 @@ title: Señales de compra venta para el mercado de valores
                     </p>
                     <p>
                         Zigna App disminuye el riesgo de nuestros usuarios al ayudarles a comparar su decisión con
-                        señales de analístas dispuestos a compartir sus ganancias.
+                        señales de analistas dispuestos a compartir sus ganancias.
                     </p>
                 </div>
             </div>
