@@ -6,9 +6,9 @@ Install requirements:
 ```bash
 sudo gem install  -n /usr/local/bin bundler jekyll
 
-#bundle init
+bundle config set path 'vendor/bundle'
 
-bundle install --path vendor/bundle
+bundle install
 ```
 
 Execute in Local:
