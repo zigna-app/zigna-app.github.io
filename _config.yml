@@ -14,7 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 name: Zigna
-title: Señales de compra venta para el mercado de valores
+title: Señales de compra venta para el mercado de valores, BTCUSD, USDCLP, EURUSD, Bitcoin, Criptomonedas.
+lang: es
 author: Zigna
 description: >- # this means to ignore newlines until "baseurl:"
   Zigna te proporciona la forma más fácil de enviar o recibir señales de compra o venta para el mercado de valores.
