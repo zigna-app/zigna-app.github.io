@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Señales de compra venta para el mercado de valores
+title: Señales de compra venta para el mercado de valores, BTCUSD, USDCLP; EURUSD, Bitcoin, Criptomonedas.
+name: Zigna
 ---
 
 <!-- ======= Intro Section ======= -->
