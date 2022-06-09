@@ -103,8 +103,8 @@ layout: page
     <section id="contact">
         <div class="container-fluid" data-aos="fade-up">
             <div class="section-header">
-                <h3>Contáctanos</h3>
-                <p>Déjanos tu datos y te enviaremos el acceso temprano a Zigna.App antes de su lanzamiento oficial.
+                <h3>Subscríbete</h3>
+                <p>Déjanos tu datos y te enviaremos acceso a tu cuenta Zigna.App.
                 </p>
             </div>
             <div class="row">

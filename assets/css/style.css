@@ -12,17 +12,17 @@
 body {
     background: #fff;
     color: #444;
-    font-family: "PT Sans", sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     font-size: 16px;
 }
 
 a {
-    color: #007bff;
+    color: #2a31ab;
     transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-    color: #0b6bd3;
+    color: #2b60f6;
     outline: none;
     text-decoration: none;
 }
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #007bff;
+    background: #2a31ab;
     color: #fff;
     width: 44px;
     height: 44px;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #f2f2f2;
-    border-top: 6px solid #007bff;
+    border-top: 6px solid #2a31ab;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav a {
     display: block;
     position: relative;
-    color: #004289;
+    color: #2a31ab;
     padding: 10px 15px;
     transition: 0.3s;
     font-size: 16px;
@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav a:hover, .main-nav .active>a, .main-nav li:hover>a {
-    color: #007bff;
+    color: #2a31ab;
     text-decoration: none;
 }
 
@@ -232,11 +232,11 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav .drop-down ul a {
     padding: 10px 20px;
     font-size: 13px;
-    color: #004289;
+    color: #2a31ab;
 }
 
 .main-nav .drop-down ul a:hover, .main-nav .drop-down ul .active>a, .main-nav .drop-down ul li:hover>a {
-    color: #007bff;
+    color: #2a31ab;
 }
 
 .main-nav .drop-down>a:after {
@@ -342,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-nav-toggle i {
     margin: 18px 18px 0 0;
-    color: #004289;
+    color: #2a31ab;
 }
 
 .mobile-nav-overly {
@@ -458,8 +458,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-info .btn-get-started {
-    background: #007bff;
-    border: 2px solid #007bff;
+    background: #2a31ab;
+    border: 2px solid #2a31ab;
     color: #fff;
     font-size: 20px;
 }
@@ -475,8 +475,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-info .btn-services:hover {
-    background: #007bff;
-    border-color: #007bff;
+    background: #2a31ab;
+    border-color: #2a31ab;
     color: #fff;
 }
 
@@ -629,17 +629,17 @@ section {
     flex-direction: column;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid #007bff;
+    border: 2px solid #2a31ab;
     transition: all 0.3s ease-in-out;
 }
 
 #about .about-container .icon-box .icon i {
-    color: #007bff;
+    color: #2a31ab;
     font-size: 24px;
 }
 
 #about .about-container .icon-box:hover .icon {
-    background: #007bff;
+    background: #2a31ab;
 }
 
 #about .about-container .icon-box:hover .icon i {
@@ -698,7 +698,7 @@ section {
     font-weight: 300;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #007bff;
+    color: #2a31ab;
 }
 
 #subscription .subscription-about p, #contact .contact-about p {
@@ -715,7 +715,7 @@ section {
     font-size: 18px;
     display: inline-block;
     background: #fff;
-    color: #007bff;
+    color: #2a31ab;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -724,11 +724,11 @@ section {
     width: 36px;
     height: 36px;
     transition: 0.3s;
-    border: 1px solid #007bff;
+    border: 1px solid #2a31ab;
 }
 
 #subscription .social-links a:hover, #contact .social-links a:hover {
-    background: #007bff;
+    background: #2a31ab;
     color: #fff;
 }
 
@@ -738,7 +738,7 @@ section {
 
 #subscription .info i, #contact .info i {
     font-size: 32px;
-    color: #007bff;
+    color: #2a31ab;
     float: left;
     line-height: 1;
 }
@@ -805,7 +805,7 @@ section {
 }
 
 #subscription .php-email-form input::focus, #subscription .php-email-form textarea::focus, #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-    background-color: #007bff;
+    background-color: #2a31ab;
 }
 
 #subscription .php-email-form input, #contact .php-email-form input {
@@ -817,7 +817,7 @@ section {
 }
 
 #subscription .php-email-form button[type="submit"], #contact .php-email-form button[type="submit"] {
-    background: #007bff;
+    background: #2a31ab;
     border: 0;
     border-radius: 20px;
     padding: 8px 30px;
@@ -889,7 +889,7 @@ section {
 #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #007bff;
+    background: #2a31ab;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -960,7 +960,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter input[type="submit"] {
-    background: #007bff;
+    background: #2a31ab;
     border: 0;
     width: 35%;
     padding: 6px 0;
