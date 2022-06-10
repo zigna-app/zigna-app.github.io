@@ -163,7 +163,7 @@ function sendFormData() {
     function postForm(form) {
 
         var URL = "https://docs.google.com/forms/d/19xLCeYSAt8ic1ZOSy8LGr_6hQMKYgemImvX2RLOJfGs/formResponse";
-        var thanks = "Gracias por contactarnos, pronto te contáctaremos de vuelta.";
+        var thanks = "Gracias, pronto te contáctaremos de vuelta.";
     
         var email = $("input#email", form).val();
         var name = $("input#nombre", form).val();
