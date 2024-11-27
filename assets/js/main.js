@@ -219,7 +219,7 @@ function sendFormData() {
 sendFormData();
 
 function ValidateEmail(email) {
-	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/.test(email)) {
+	if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
 		return (true)
 	}
 	alert("Por favor ingresar un email válido. \'" + email + "\' no es válido.");
