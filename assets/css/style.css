@@ -853,14 +853,14 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #00428a;
+    background: white;
     padding: 0 0 30px 0;
-    color: #eee;
+    color: #091C99;
     font-size: 14px;
 }
 
 #footer .footer-top {
-    background: #004a99;
+    background: #091C99;
     padding: 60px 0 30px 0;
 }
 
