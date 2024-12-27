@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .intro-info .btn-get-started {
     background: #2a31ab;
-    border: 2px solid #2a31ab;
+    border: 2px solid white;
     color: #fff;
     font-size: 20px;
 }
