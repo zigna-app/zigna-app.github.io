@@ -163,23 +163,23 @@ function sendFormData() {
     function postForm(form) {
 
         var URL = "https://docs.google.com/forms/d/19xLCeYSAt8ic1ZOSy8LGr_6hQMKYgemImvX2RLOJfGs/formResponse";
-        var thanks = "Gracias, pronto te contáctaremos de vuelta.";
-    
+        var thanks = "Thank you! We will contact you soon.";
+
         var email = $("input#email", form).val();
         var name = $("input#nombre", form).val();
         var message = $("#message", form).val();
-    
+
         if (email == "") {
-            alert("Ingresa tu email antes de enviar el formulario.");
-    
+            alert("Please enter your email before sending the form.");
+
             return false;
         }
         if (!ValidateEmail(email)) return false;
         if (URL == "") {
-            alert("Hubo problemas para enviar el formulario, por favor intenta más tarde,");
+            alert("There was a problem sending the form, please try again later.");
             return false;
         }
-    
+
         $('.fa-inactive', form).addClass('fa-active');
         $('button[type=submit]', form).disabled = true;
         $.ajax({
@@ -219,10 +219,10 @@ function sendFormData() {
 sendFormData();
 
 function ValidateEmail(email) {
-	if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
-		return (true)
-	}
-	alert("Por favor ingresar un email válido. \'" + email + "\' no es válido.");
+    if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+        return (true)
+    }
+    alert("Por favor ingresar un email válido. \'" + email + "\' no es válido.");
 
-	return false;
+    return false;
 }
