@@ -42,7 +42,7 @@ parallel_localization: true
 
 author: Zigna
 description: >- # this means to ignore newlines until "baseurl:"
-  Zigna te proporciona la forma más fácil de enviar o recibir señales de compra o venta para el mercado de valores.
+  Master profitable trading with personalized AI guidance, risk-free simulators, and real-time market intelligence. Whether you're taking your first trade or refining your strategy, Zigna teaches you to trade smarter—not harder.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.zigna.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ZignaApp
