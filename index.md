@@ -231,7 +231,8 @@ title: Home
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="form">
-                        <form class="php-email-form" name="zigna-contacto" netlify>
+                        <form class="php-email-form" name="zigna-contacto" netlify data-recaptcha-sitekey="6Ldr68YZAAAAAJ3gOn0JI3Sd-KabCsfkIQNDsluz">
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                             <div class="form-row">
                                 <div class="form-group col-lg-6">
                                     <input type="text" name="nombre" class="form-control" id="nombre"
@@ -256,6 +257,7 @@ title: Home
                             <div class="text-center">
                                 <button type="submit" title="Send" class="fa-inactive">{% t contact.btn %}</button>
                             </div>
+                            <div id="recaptcha-container"></div>
                         </form>
                     </div>
                 </div>

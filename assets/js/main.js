@@ -159,29 +159,59 @@
 
 // Netflify forms: https://gist.github.com/juanbrujo/c97afee62975bddc0ab9e4428a39f474
 function sendFormData() {
+    window.recaptchaWidgetId = null;
+
+    function restoreButtonState(form) {
+        var button = $('button[type=submit]', form);
+        button.prop('disabled', false);
+        $('.fa-inactive', form).removeClass('fa-active');
+
+        if (typeof grecaptcha !== 'undefined' && window.recaptchaWidgetId !== null) {
+            try {
+                grecaptcha.reset(window.recaptchaWidgetId);
+            } catch (e) {
+                console.error("reCAPTCHA reset error", e);
+            }
+        }
+    }
 
     function postForm(form) {
-
         var URL = "https://docs.google.com/forms/d/19xLCeYSAt8ic1ZOSy8LGr_6hQMKYgemImvX2RLOJfGs/formResponse";
         var thanks = window.I18N.thanks;
 
         var email = $("input#email", form).val();
         var name = $("input#nombre", form).val();
-        var message = $("#message", form).val();
+        var messageInput = $("#message", form).val();
+        const source = "zigna.app";
+        var href = window.location.href;
+        var lang = window.I18N.lang || "en";
 
         if (email == "") {
             alert(window.I18N.emailError);
-
+            restoreButtonState(form);
             return false;
         }
-        if (!ValidateEmail(email)) return false;
+        if (!ValidateEmail(email)) {
+            restoreButtonState(form);
+            return false;
+        }
         if (URL == "") {
             alert(window.I18N.formError);
+            restoreButtonState(form);
             return false;
         }
 
+        var message = `
+${messageInput}
+<br><hr>---
+<p><b>Reference</b>: ${href}</p>
+<p><b>Source</b>: ${source}</p>
+<p><b>Language</b>: ${lang}</p>
+        `;
+
         $('.fa-inactive', form).addClass('fa-active');
-        $('button[type=submit]', form).disabled = true;
+        $('button[type=submit]', form).prop('disabled', true);
+
         $.ajax({
             url: URL,
             data: {
@@ -194,26 +224,50 @@ function sendFormData() {
             statusCode: {
                 0: function () {
                     $("#contact .form").html('<p class="nea-form-sent">' + thanks + '</p>');
-                    console.warn("statusCode: 0");
-                    $('button[type=submit]', form).disabled = false;
-                    $('.fa-inactive', form).removeClass('fa-active');
-                    // console.trace();
                 },
                 200: function () {
                     $("#contact .form").html('<p class="nea-form-sent">' + thanks + '</p>');
-                    $('button[type=submit]', form).disabled = false;
-                    $('.fa-inactive', form).removeClass('fa-active');
-                    // console.trace();
                 }
+            },
+            error: function () {
+                restoreButtonState(form);
             }
         });
     }
 
-    var form = document.querySelectorAll('.php-email-form')[0]
-    form.addEventListener('submit', function (e) {
+    $('.php-email-form').on('submit', function (e) {
         e.preventDefault();
-        postForm(form);
-    })
+        var form = this;
+        var $form = $(form);
+        var sitekey = $form.data('recaptcha-sitekey');
+
+        if (sitekey && typeof grecaptcha !== 'undefined') {
+            grecaptcha.ready(function () {
+                try {
+                    if (window.recaptchaWidgetId === null) {
+                        window.recaptchaWidgetId = grecaptcha.render('recaptcha-container', {
+                            'sitekey': sitekey,
+                            'size': 'invisible',
+                            'callback': function (token) {
+                                $('#g-recaptcha-response', form).val(token);
+                                postForm(form);
+                            },
+                            'error-callback': function () {
+                                restoreButtonState(form);
+                                alert('reCAPTCHA verification failed.');
+                            }
+                        });
+                    }
+                    grecaptcha.execute(window.recaptchaWidgetId);
+                } catch (error) {
+                    console.error('reCAPTCHA error', error);
+                    postForm(form);
+                }
+            });
+        } else {
+            postForm(form);
+        }
+    });
 
 }
 sendFormData();
