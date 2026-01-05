@@ -1,18 +1,36 @@
 <!-- ======= Header ======= -->
+<script>
+    window.I18N = {
+        thanks: "{% t contact.success %}",
+        emailError: "{% t contact.email_error %}",
+        formError: "{% t contact.error %}",
+        lang: "{{ site.lang }}"
+    };
+</script>
+
 <header id="header" class="fixed-top">
     <div class="container">
 
         <div class="logo float-left">
-            <a href="/"><img src="assets/img/logo-twhite.png" alt="" class="img-fluid"></a>
+            <a href="{% tl home %}"><img src="{{ site.baseurl_root }}/assets/img/logo-twhite.png" alt=""
+                    class="img-fluid"></a>
         </div>
 
         <nav class="main-nav float-right d-none d-lg-block">
             <ul>
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://www.zigna.app" class="btn-app">Go to App</a></li>
+                <li class="active"><a href="{% tl home %}">{% t nav.home %}</a></li>
+                <li><a href="#features">{% t nav.features %}</a></li>
+                <li><a href="#how-it-works">{% t nav.how_it_works %}</a></li>
+                <li><a href="#contact">{% t nav.contact %}</a></li>
+                <li class="drop-down"><a href="#">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
+                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    <ul>
+                        <li><a href="{% tl home en %}">EN</a></li>
+                        <li><a href="{% tl home es %}">ES</a></li>
+                        <li><a href="{% tl home pt %}">PT</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.zigna.app" class="btn-app">{% t nav.app %}</a></li>
             </ul>
         </nav><!-- .main-nav -->
 

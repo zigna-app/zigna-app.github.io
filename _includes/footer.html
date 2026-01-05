@@ -6,17 +6,16 @@
 
                 <div class="col-lg-8 footer-info">
                     <h3>Zigna</h3>
-                    <p>Your AI Trading Tutor, Monitor and Companion. Empowering traders with personalized AI guidance
-                        and real-time market intelligence.</p>
+                    <p>{% t footer.text %}</p>
                 </div>
 
                 <div class="col-lg-2 offset-lg-2 footer-links">
                     <h4>Menu</h4>
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="{% tl home %}">{% t nav.home %}</a></li>
+                        <li><a href="#features">{% t nav.features %}</a></li>
+                        <li><a href="#how-it-works">{% t nav.how_it_works %}</a></li>
+                        <li><a href="#contact">{% t nav.contact %}</a></li>
                         <li><a href="https://www.zigna.app">App</a></li>
                     </ul>
                 </div>
@@ -28,7 +27,7 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>Zigna</strong>. All rights reserved.
+            &copy; Copyright <strong>Zigna</strong>. {% t footer.copyright %}
         </div>
     </div>
 </footer><!-- End Footer -->

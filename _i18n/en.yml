@@ -1,0 +1,111 @@
+# General
+nav:
+  home: "Home"
+  features: "Features"
+  how_it_works: "How It Works"
+  contact: "Contact"
+  app: "Go to App"
+
+# Hero Section
+hero:
+  title: "Your AI Trading Tutor, Monitor and Companion."
+  highlight: "Learn and Win."
+  subtitle: "Master profitable trading with personalized AI guidance, risk-free simulators, and real-time market intelligence. Whether you're taking your first trade or refining your strategy, Zigna teaches you to trade smarter—not harder."
+  get_started: "Get Started Free"
+  sign_in: "Sign In"
+
+# Features Section
+features:
+  title: "Why Choose Zigna?"
+  subtitle: "Your complete AI-powered trading education and monitoring platform"
+  professor:
+    title: "🎓 Your Personal Trading Professor"
+    text: "Never trade blind again. Zigna's AI analyzes your portfolio 24/7, delivering personalized morning briefs and afternoon summaries with technical analysis, support/resistance levels, and breaking news that actually matters for YOUR assets."
+  chat:
+    title: "💬 Chat Your Way to Better Trades"
+    text: "Ask questions, set alerts, create trades—just talk to your AI Trading Tutor and Companion. No complicated menus. No tutorials to watch. Just natural conversation that gets smarter with every interaction."
+  intelligence:
+    title: "📊 Real-Time Market Intelligence"
+    text: "Stay ahead with live market data, technical indicators, and AI-powered insights. Track multiple portfolios, set price alarms, and get instant notifications when opportunities arise."
+  risk_free:
+    title: "🛡️ Risk-Free Learning"
+    text: "Practice trading strategies in our simulator before risking real money. Learn from your mistakes without financial consequences and build confidence before going live."
+  alerts:
+    title: "🔔 Smart Alerts & Notifications"
+    text: "Never miss a trading opportunity. Set custom price alerts, get notified of market-moving news, and receive AI-generated insights tailored to your portfolio."
+  multiasset:
+    title: "👥 Multi-Asset Support"
+    text: "Trade stocks, cryptocurrencies, forex, commodities, and more—all from one unified platform. Your AI tutor adapts to each asset class with specialized knowledge."
+
+# How It Works
+how:
+  title: "How Zigna Works"
+  subtitle: "Start your trading journey in three simple steps"
+  step1:
+    title: "Create Your Account"
+    text: "Sign up for free and complete your trading profile. Tell us about your goals, experience level, and preferred assets."
+  step2:
+    title: "Meet Your AI Tutor"
+    text: "Get paired with a personalized AI trading tutor that understands your portfolio and learning style. Start chatting immediately."
+  step3:
+    title: "Learn & Trade Smarter"
+    text: "Receive daily briefs, ask questions anytime, set alerts, and execute trades—all guided by your AI companion."
+
+# Pricing
+pricing:
+  title: "Investment Plans"
+  subtitle: "Choose the right level of AI intelligence for your trading journey"
+  best_value: "BEST VALUE"
+  starter:
+    name: "Starter Predictor"
+    price: "$19"
+    period: "/month"
+    btn: "Start Starter"
+  pro:
+    name: "Pro Predictor"
+    price: "$99"
+    btn: "Start Pro Trial"
+  enterprise:
+    name: "Enterprise Predictor"
+    price: "$129"
+    period: "/month"
+    btn: "Contact Sales"
+  features:
+    portfolios: "Active Portfolios"
+    alarms: "Price Case Alarms"
+    insights_8: "Every 8 hours insights"
+    insights_2: "Every 2 hours insights"
+    streaming: "Real-Time AI Streaming"
+    customization: "Full Prompt Customization"
+    api: "Full API Access"
+    support_email: "Email Support (48h)"
+    support_priority: "Priority Email Support (12h)"
+    support_dedicated: "Dedicated 1h Support (Phone/Chat)"
+    rag_200k: "200,000 Analysis Storage (RAG)"
+    rag_1m: "1,000,000 Analysis Storage (RAG)"
+    rag_5m: "5,000,000 Analysis Storage (RAG)"
+
+# CTA
+cta:
+  title: "Ready to Transform Your Trading?"
+  text: "Join thousands of traders who are learning smarter and trading better with Zigna's AI-powered platform."
+  btn: "Start Your Free Trial"
+  note: "No credit card required • 30-day free trial • Cancel anytime"
+
+# Contact
+contact:
+  title: "Get in Touch"
+  subtitle: "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+  name_placeholder: "Your Name"
+  email_placeholder: "Your Email"
+  message_placeholder: "Your Message"
+  btn: "Send Message"
+  loading: "Loading..."
+  error: "Sorry! An error occurred while sending the form, please try again later."
+  email_error: "Please enter a valid email"
+  success: "Your message has been sent. Thank you!"
+
+# Footer
+footer:
+  text: "Your AI Trading Tutor, Monitor and Companion. Empowering traders with personalized AI guidance and real-time market intelligence."
+  copyright: "All rights reserved."

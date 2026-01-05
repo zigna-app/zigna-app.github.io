@@ -1,0 +1,111 @@
+# General
+nav:
+  home: "Inicio"
+  features: "Características"
+  how_it_works: "Cómo funciona"
+  contact: "Contacto"
+  app: "Ir a la App"
+
+# Hero Section
+hero:
+  title: "Tu Tutor, Monitor y Compañero de Trading con IA."
+  highlight: "Aprende y Gana."
+  subtitle: "Domina el trading rentable con guía personalizada de IA, simuladores sin riesgo e inteligencia de mercado en tiempo real. Ya sea que estés realizando tu primera operación o refinando tu estrategia, Zigna te enseña a operar de manera más inteligente, no más difícil."
+  get_started: "Comienza Gratis"
+  sign_in: "Iniciar Sesión"
+
+# Features Section
+features:
+  title: "¿Por qué elegir Zigna?"
+  subtitle: "Tu plataforma completa de educación y monitoreo de trading impulsada por IA"
+  professor:
+    title: "🎓 Tu Profesor Personal de Trading"
+    text: "Nunca vuelvas a operar a ciegas. La IA de Zigna analiza tu portafolio 24/7, entregando informes matutinos personalizados y resúmenes vespertinos con análisis técnico, niveles de soporte/resistencia y noticias de última hora que realmente importan para TUS activos."
+  chat:
+    title: "💬 Chatea para Mejorar tus Operaciones"
+    text: "Haz preguntas, establece alertas, crea operaciones: simplemente habla con tu Tutor y Compañero de Trading con IA. Sin menús complicados. Sin tutoriales que ver. Solo una conversación natural que se vuelve más inteligente con cada interacción."
+  intelligence:
+    title: "📊 Inteligencia de Mercado en Tiempo Real"
+    text: "Mantente a la vanguardia con datos de mercado en vivo, indicadores técnicos e información impulsada por IA. Rastrea múltiples portafolios, establece alarmas de precios y recibe notificaciones instantáneas cuando surjan oportunidades."
+  risk_free:
+    title: "🛡️ Aprendizaje Sin Riesgo"
+    text: "Practica estrategias de trading en nuestro simulador antes de arriesgar dinero real. Aprende de tus errores sin consecuencias financieras y genera confianza antes de operar en vivo."
+  alerts:
+    title: "🔔 Alertas y Notificaciones Inteligentes"
+    text: "Nunca pierdas una oportunidad de trading. Establece alertas de precios personalizadas, recibe notificaciones de noticias que mueven el mercado y obtén información generada por IA adaptada a tu portafolio."
+  multiasset:
+    title: "👥 Soporte Multiactivo"
+    text: "Opera acciones, criptomonedas, forex, materias primas y más, todo desde una plataforma unificada. Tu tutor de IA se adapta a cada clase de activo con conocimiento especializado."
+
+# How It Works
+how:
+  title: "Cómo Funciona Zigna"
+  subtitle: "Comienza tu viaje en el trading en tres simples pasos"
+  step1:
+    title: "Crea tu Cuenta"
+    text: "Regístrate gratis y completa tu perfil de trading. Cuéntanos sobre tus objetivos, nivel de experiencia y activos preferidos."
+  step2:
+    title: "Conoce a tu Tutor de IA"
+    text: "Emparejate con un tutor de trading de IA personalizado que entienda tu portafolio y estilo de aprendizaje. Comienza a chatear de inmediato."
+  step3:
+    title: "Aprende y Opera Inteligente"
+    text: "Recibe informes diarios, haz preguntas en cualquier momento, establece alertas y ejecuta operaciones, todo guiado por tu compañero de IA."
+
+# Pricing
+pricing:
+  title: "Planes de Inversión"
+  subtitle: "Elige el nivel correcto de inteligencia de IA para tu viaje en el trading"
+  best_value: "MEJOR VALOR"
+  starter:
+    name: "Starter Predictor"
+    price: "$19"
+    period: "/mes"
+    btn: "Comenzar Starter"
+  pro:
+    name: "Pro Predictor"
+    price: "$99"
+    btn: "Iniciar Prueba Pro"
+  enterprise:
+    name: "Enterprise Predictor"
+    price: "$129"
+    period: "/mes"
+    btn: "Contactar Ventas"
+  features:
+    portfolios: "Portafolios Activos"
+    alarms: "Alarmas de Precios de Casos"
+    insights_8: "Informes cada 8 horas"
+    insights_2: "Informes cada 2 horas"
+    streaming: "Streaming de IA en Tiempo Real"
+    customization: "Personalización Total de Prompts"
+    api: "Acceso Total a la API"
+    support_email: "Soporte por Email (48h)"
+    support_priority: "Soporte Prioritario por Email (12h)"
+    support_dedicated: "Soporte Dedicado de 1h (Teléfono/Chat)"
+    rag_200k: "200.000 Almacenamiento de Análisis (RAG)"
+    rag_1m: "1.000.000 Almacenamiento de Análisis (RAG)"
+    rag_5m: "5.000.000 Almacenamiento de Análisis (RAG)"
+
+# CTA
+cta:
+  title: "¿Listo para Transformar tu Trading?"
+  text: "Únete a miles de traders que están aprendiendo de manera más inteligente y operando mejor con la plataforma de IA de Zigna."
+  btn: "Inicia tu Prueba Gratis"
+  note: "No se requiere tarjeta de crédito • Prueba gratuita de 30 días • Cancela en cualquier momento"
+
+# Contact
+contact:
+  title: "Ponte en Contacto"
+  subtitle: "¿Tienes preguntas? Nos encantaría saber de ti. Envíanos un mensaje y responderemos lo antes posible."
+  name_placeholder: "Tu Nombre"
+  email_placeholder: "Tu Email"
+  message_placeholder: "Tu Mensaje"
+  btn: "Enviar Mensaje"
+  loading: "Cargando..."
+  error: "¡Lo sentimos! Ocurrió un error al enviar el formulario, por favor intenta de nuevo más tarde."
+  email_error: "Por favor ingresa un email válido"
+  success: "Tu mensaje ha sido enviado. ¡Gracias!"
+
+# Footer
+footer:
+  text: "Tu Tutor, Monitor y Compañero de Trading con IA. Empoderando a los traders con guía personalizada de IA e inteligencia de mercado en tiempo real."
+  copyright: "Todos los derechos reservados."

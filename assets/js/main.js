@@ -163,20 +163,20 @@ function sendFormData() {
     function postForm(form) {
 
         var URL = "https://docs.google.com/forms/d/19xLCeYSAt8ic1ZOSy8LGr_6hQMKYgemImvX2RLOJfGs/formResponse";
-        var thanks = "Thank you! We will contact you soon.";
+        var thanks = window.I18N.thanks;
 
         var email = $("input#email", form).val();
         var name = $("input#nombre", form).val();
         var message = $("#message", form).val();
 
         if (email == "") {
-            alert("Please enter your email before sending the form.");
+            alert(window.I18N.emailError);
 
             return false;
         }
         if (!ValidateEmail(email)) return false;
         if (URL == "") {
-            alert("There was a problem sending the form, please try again later.");
+            alert(window.I18N.formError);
             return false;
         }
 
@@ -212,7 +212,7 @@ function sendFormData() {
     var form = document.querySelectorAll('.php-email-form')[0]
     form.addEventListener('submit', function (e) {
         e.preventDefault();
-        postForm();
+        postForm(form);
     })
 
 }
@@ -222,7 +222,7 @@ function ValidateEmail(email) {
     if (/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
         return (true)
     }
-    alert("Por favor ingresar un email válido. \'" + email + "\' no es válido.");
+    alert(window.I18N.emailError + " '" + email + "'");
 
     return false;
 }

@@ -14,8 +14,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 name: Zigna
-title: Señales de compra venta para el mercado de valores, BTCUSD, USDCLP, EURUSD, Bitcoin, Criptomonedas.
-lang: es
+title: Zigna - Your AI Trading Tutor, Monitor and Companion
+lang: en
+default_lang: en
+languages: ["en", "pt", "es"]
+exclude_from_localizations: ["assets", "vendor", "slides"]
+
+plugins:
+  - jekyll-feed
+  - jekyll-multiple-languages-plugin
+
 author: Zigna
 description: >- # this means to ignore newlines until "baseurl:"
   Zigna te proporciona la forma más fácil de enviar o recibir señales de compra o venta para el mercado de valores.
@@ -29,9 +37,7 @@ color_secondary: "#2b60f6;"
 markdown: kramdown
 theme: minima
 
-
 #permalink: /:categories/:year/:month/:day/:title:output_ext
-
 
 google_analytics: "G-1EW53HKMKV"
 # Exclude from processing.

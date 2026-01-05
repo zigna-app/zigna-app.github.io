@@ -261,7 +261,7 @@ body {
 .step-number {
     font-size: 5rem;
     font-weight: 900;
-    color: rgba(116, 181, 252, 0.1);
+    color: rgba(116, 181, 252, 0.3);
     line-height: 1;
     margin-bottom: -40px;
 }
@@ -331,6 +331,65 @@ body {
     font-weight: 700 !important;
     cursor: pointer;
     transition: 0.3s;
+}
+
+.php-email-form button:hover {
+    background: #fff !important;
+    color: var(--primary) !important;
+}
+
+.php-email-form .loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--highlight);
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #df1529;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.php-email-form .sent-message,
+.nea-form-sent {
+    display: none;
+    color: #fff;
+    background: #059669;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.nea-form-sent {
+    display: block;
 }
 
 /* Pricing Section */
@@ -483,6 +542,88 @@ body {
     }
 }
 
+/* Mobile Nav Toggle */
+.mobile-nav-toggle {
+    position: fixed;
+    right: 15px;
+    top: 20px;
+    z-index: 9998;
+    border: 0;
+    background: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    line-height: 1;
+    cursor: pointer;
+    text-align: right;
+    color: #fff;
+}
+
+.mobile-nav-toggle i {
+    color: #fff;
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    width: 260px;
+    left: -260px;
+    background: #020408;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-right: 1px solid var(--glass-border);
+}
+
+.mobile-nav-active .mobile-nav {
+    left: 0;
+}
+
+.mobile-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.mobile-nav li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.mobile-nav a {
+    color: var(--text-main);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mobile-nav a:hover {
+    color: var(--highlight);
+}
+
+.mobile-nav .drop-down ul {
+    display: none;
+    padding: 5px 0 0 10px;
+}
+
+.mobile-nav .drop-down.active>ul {
+    display: block;
+}
+
+.mobile-nav-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 9997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+
 /* Header & Navigation */
 #header {
     height: 80px;
@@ -538,6 +679,53 @@ body {
 .main-nav li:hover>a {
     color: var(--highlight) !important;
 }
+
+/* Dropdown Menu */
+.main-nav .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 15px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    background: #020408;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+}
+
+.main-nav .drop-down:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.main-nav .drop-down ul li {
+    min-width: 120px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav .drop-down ul a {
+    padding: 10px 20px;
+    font-size: 13px;
+    text-transform: none;
+    color: var(--text-main) !important;
+    display: block;
+    line-height: 1;
+}
+
+.main-nav .drop-down ul a:hover {
+    color: var(--highlight) !important;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+
 
 #footer {
     background: #000 !important;
