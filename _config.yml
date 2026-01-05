@@ -53,7 +53,7 @@ color_secondary: "#2b60f6;"
 markdown: kramdown
 permalink: pretty
 
-google_analytics: "G-1EW53HKMKV"
+google_analytics: "G-6QNFRMNM4X"
 
 # Exclude directories and files
 exclude:
