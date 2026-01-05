@@ -124,7 +124,7 @@
             $('.mobile-nav-overly').toggle();
         });
 
-        $(document).on('click', '.mobile-nav .drop-down > a', function (e) {
+        $(document).on('click', '.mobile-nav .drop-down > a, .tool-list .drop-down > a', function (e) {
             e.preventDefault();
             $(this).next().slideToggle(300);
             $(this).parent().toggleClass('active');
@@ -153,6 +153,42 @@
     }
     $(window).on('load', function () {
         aos_init();
+    });
+
+    // Theme Toggle Logic
+    $(document).ready(function () {
+        const themeToggle = $('.theme-toggle');
+        const themeIcon = themeToggle.find('i');
+        const logoImg = $('.logo img');
+        const currentTheme = localStorage.getItem('theme');
+
+        // Path detection for logo
+        const currentSrc = logoImg.attr('src');
+        const basePath = currentSrc ? currentSrc.substring(0, currentSrc.lastIndexOf('/')) : '';
+
+        function setTheme(theme) {
+            if (theme === 'light') {
+                $('body').addClass('light-mode');
+                themeIcon.removeClass('fa-moon-o').addClass('fa-sun-o');
+                if (logoImg.length) logoImg.attr('src', basePath + '/logo.png');
+            } else {
+                $('body').removeClass('light-mode');
+                themeIcon.removeClass('fa-sun-o').addClass('fa-moon-o');
+                if (logoImg.length) logoImg.attr('src', basePath + '/logo-twhite.png');
+            }
+        }
+
+        if (currentTheme === 'light') {
+            setTheme('light');
+        }
+
+        $(document).on('click', '.theme-toggle', function (e) {
+            e.preventDefault();
+            const isLight = $('body').hasClass('light-mode');
+            const newTheme = isLight ? 'dark' : 'light';
+            setTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
     });
 
 })(jQuery);
@@ -202,11 +238,11 @@ function sendFormData() {
         }
 
         var message = `
-${messageInput}
-<br><hr>---
-<p><b>Reference</b>: ${href}</p>
-<p><b>Source</b>: ${source}</p>
-<p><b>Language</b>: ${lang}</p>
+            ${messageInput}
+            <br><hr>---
+            <p><b>Reference</b>: ${href}</p>
+            <p><b>Source</b>: ${source}</p>
+            <p><b>Language</b>: ${lang}</p>
         `;
 
         $('.fa-inactive', form).addClass('fa-active');

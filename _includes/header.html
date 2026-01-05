@@ -16,14 +16,10 @@
                     class="img-fluid"></a>
         </div>
 
-        <nav class="main-nav float-right d-none d-lg-block">
-            <ul>
-                <li class="active"><a href="{% tl home %}">{% t nav.home %}</a></li>
-                <li><a href="#features">{% t nav.features %}</a></li>
-                <li><a href="#how-it-works">{% t nav.how_it_works %}</a></li>
-                <li><a href="#contact">{% t nav.contact %}</a></li>
-                <li><a href="https://www.zigna.app/blog">Blog</a></li>
-                <li class="drop-down"><a href="#">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
+        <div class="header-tools float-right">
+            <ul class="tool-list">
+                <li class="drop-down lang-selector">
+                    <a href="#">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
                             style="font-size: 10px; margin-left: 5px;"></i></a>
                     <ul>
                         <li><a href="{% tl home en %}">EN</a></li>
@@ -31,6 +27,21 @@
                         <li><a href="{% tl home pt %}">PT</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a class="theme-toggle" href="javascript:void(0);">
+                        <i class="fa fa-moon-o"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="main-nav float-right d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="{% tl home %}">{% t nav.home %}</a></li>
+                <li><a href="#features">{% t nav.features %}</a></li>
+                <li><a href="#how-it-works">{% t nav.how_it_works %}</a></li>
+                <li><a href="#contact">{% t nav.contact %}</a></li>
+                <li><a href="https://www.zigna.app/blog">Blog</a></li>
                 <li><a href="https://www.zigna.app" class="btn-app">{% t nav.app %}</a></li>
             </ul>
         </nav><!-- .main-nav -->

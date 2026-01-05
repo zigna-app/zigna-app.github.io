@@ -15,6 +15,24 @@
     --glass-border: rgba(255, 255, 255, 0.1);
 }
 
+/* Light Mode Overrides */
+body.light-mode {
+    --primary: #2c34ac;
+    --primary-dark: #f8f9fa;
+    --secondary: #313ac0;
+    --highlight: #2c34ac;
+    --text-main: #1a1a1a;
+    --text-muted: rgba(0, 0, 0, 0.6);
+    --bg-dark: #ffffff;
+    --glass: rgba(0, 0, 0, 0.03);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode {
+    background-color: #fff;
+    color: var(--text-main);
+}
+
 body {
     font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #000;
@@ -640,12 +658,98 @@ body {
 #header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+#header .logo {
+    margin-right: 15px;
 }
 
 #header .logo img {
-    max-height: 40px;
+    max-height: 35px;
     margin: 0;
+}
+
+/* Header Tools (Language & Theme) */
+.header-tools {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.tool-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.tool-list li {
+    margin-left: 10px;
+    position: relative;
+}
+
+.tool-list a {
+    color: var(--text-main) !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tool-list .drop-down ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 15px);
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    padding: 10px 0;
+    list-style: none;
+    background: #020408;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+}
+
+.tool-list .drop-down:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+}
+
+.tool-list .drop-down ul li {
+    min-width: 80px;
+    margin: 0;
+}
+
+.tool-list .drop-down ul a {
+    padding: 8px 15px;
+    display: block;
+    text-transform: none;
+}
+
+.tool-list .theme-toggle {
+    margin-left: 0;
+}
+
+@media (max-width: 991px) {
+    .header-tools {
+        margin-right: 0;
+        /* Space for sandwich menu */
+    }
+
+    .tool-list .drop-down.active>ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        top: 100%;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .main-nav {
@@ -678,6 +782,186 @@ body {
 .main-nav .active>a,
 .main-nav li:hover>a {
     color: var(--highlight) !important;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--text-main) !important;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    text-decoration: none !important;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    text-decoration: none !important;
+}
+
+body.light-mode .theme-toggle:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Light Mode Specific Overrides */
+body.light-mode #header {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .hero-section {
+    background: linear-gradient(-45deg, #f0f4ff, #ffffff, #e6eeff, #f0f4ff);
+}
+
+body.light-mode .hero-title {
+    background: linear-gradient(to right, #1a1a1a, var(--primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+body.light-mode .feature-card,
+body.light-mode .pricing-card {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .feature-card:hover,
+body.light-mode .pricing-card:hover {
+    background: #fff;
+    border-color: var(--primary);
+}
+
+body.light-mode .best-value {
+    color: #fff;
+    background: var(--primary);
+}
+
+body.light-mode .btn-pricing {
+    background: rgba(44, 52, 172, 0.05);
+    color: var(--primary);
+    border: 1px solid rgba(44, 52, 172, 0.1);
+}
+
+body.light-mode .btn-pricing:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+body.light-mode .btn-pricing.primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+/* Button Text Contrast Fixes */
+body.light-mode .btn-get-started,
+body.light-mode .btn-app,
+body.light-mode .php-email-form button {
+    color: #fff !important;
+}
+
+body.light-mode .btn-cta {
+    color: var(--primary) !important;
+    background: #fff !important;
+}
+
+body.light-mode .cta-section h2,
+body.light-mode .cta-section p,
+body.light-mode .cta-section .cta-note {
+    color: #fff !important;
+}
+
+body.light-mode .btn-secondary {
+    color: var(--primary) !important;
+    background: rgba(44, 52, 172, 0.08) !important;
+    border: 1px solid rgba(44, 52, 172, 0.2) !important;
+}
+
+body.light-mode .btn-secondary:hover {
+    background: rgba(44, 52, 172, 0.15) !important;
+}
+
+body.light-mode .feature-card p,
+body.light-mode .plan-features li,
+body.light-mode .step-card p {
+    color: var(--text-muted);
+}
+
+body.light-mode .features-section,
+body.light-mode .pricing-section,
+body.light-mode .how-it-works-section {
+    background: #fff;
+}
+
+body.light-mode .how-it-works-section {
+    background: radial-gradient(circle at top right, rgba(44, 52, 172, 0.05), transparent);
+}
+
+body.light-mode #contact {
+    background: #f8f9fa;
+}
+
+body.light-mode #footer {
+    background: #f8f9fa !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode #footer h3,
+body.light-mode #footer h4,
+body.light-mode #footer p,
+body.light-mode #footer .copyright,
+body.light-mode #footer .footer-links a {
+    color: #1a1a1a !important;
+}
+
+body.light-mode #footer .footer-links a:hover {
+    color: var(--primary) !important;
+}
+
+body.light-mode .php-email-form input,
+body.light-mode .php-email-form textarea {
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .main-nav .drop-down ul,
+body.light-mode .mobile-nav {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .main-nav .drop-down ul a {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .mobile-nav-toggle i {
+    color: #1a1a1a;
+}
+
+body.light-mode .tool-list .drop-down ul {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .tool-list a {
+    color: #1a1a1a !important;
+}
+
+body.light-mode .back-to-top {
+    background: var(--primary);
+    color: #fff;
+}
+
+body.light-mode .back-to-top:hover {
+    background: #1a1a1a;
+    color: #fff;
 }
 
 /* Dropdown Menu */
