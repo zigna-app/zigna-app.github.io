@@ -35,5 +35,5 @@ end
 # Performance-booster for watching directories on Windows
 # gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
-gem 'http_parser.rb', git: "git@github.com:tmm1/http_parser.rb.git"
+gem 'http_parser.rb', git: "https://github.com/tmm1/http_parser.rb.git"
 
