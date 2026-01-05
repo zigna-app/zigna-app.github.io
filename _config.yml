@@ -34,9 +34,6 @@ exclude_from_localization:
   - "icon_144x144.png"
   - "icon_192x192.png"
   - "icon_256x256.png"
-  - "icon_384x384.png"
-  - "icon_512x512.png"
-  - "icont_1024_1024.png"
   - "logo.png"
 parallel_localization: true
 
