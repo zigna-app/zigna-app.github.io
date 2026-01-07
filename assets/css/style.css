@@ -562,10 +562,10 @@ body {
 
 /* Mobile Nav Toggle */
 .mobile-nav-toggle {
-    position: fixed;
-    right: 15px;
-    top: 20px;
+    position: relative;
     z-index: 9998;
+    margin-left: 20px;
+    margin-right: 5px;
     border: 0;
     background: none;
     font-size: 24px;
@@ -646,7 +646,8 @@ body {
 #header {
     height: 80px;
     transition: all 0.5s;
-    z-index: 997;
+    z-index: 9998;
+    /* Stay above overlay but below nav menu */
     transition: all 0.5s;
     background: rgba(2, 4, 8, 0.8) !important;
     backdrop-filter: blur(20px);
@@ -738,8 +739,8 @@ body {
 
 @media (max-width: 991px) {
     .header-tools {
-        margin-right: 45px;
-        /* Space for sandwich menu */
+        margin-right: 0;
+        /* Space for sandwich menu handled by flex flow */
     }
 
     .tool-list .drop-down.active>ul {
