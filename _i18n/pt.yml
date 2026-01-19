@@ -9,18 +9,18 @@ nav:
 # Hero Section
 hero:
   title: "Zigna.app, Companheiros, monitores e tutores de Trading com IA."
-  highlight: "Aprenda, reforce e faça seu lucro."
-  subtitle: "Domine o trading lucrativo com orientação personalizada de IA, simuladores sem risco e inteligência de mercado em tempo real. O Zigna ensina você a operar de forma mais inteligente — não mais difícil."
+  highlight: "Aprenda, reforce e take profit."
+  subtitle: "Domine o trading com orientação personalizada de IA, simuladores sem risco e inteligência de mercado em tempo real. Zigna.app ensina você a operar de forma mais inteligente — não mais difícil."
   get_started: "Comece Grátis"
   sign_in: "Entrar"
 
 # Features Section
 features:
-  title: "Por que escolher o Zigna?"
+  title: "Por que escolher Zigna.app?"
   subtitle: "Sua plataforma completa de educação e monitoramento de trading impulsionada por IA"
   professor:
     title: "🎓 Seu Professor de Trading Pessoal"
-    text: "Nunca mais opere às cegas. A IA do Zigna analisa seu portfólio 24 horas por dia, 7 dias por semana, entregando briefings matinais personalizados e resumos à tarde com análise técnica, níveis de suporte/resistência e notícias de última hora que realmente importam para SEUS ativos."
+    text: "Nunca mais opere às cegas. A IA Zigna.app analisa seu portfólio 24 horas por dia, 7 dias por semana, entregando briefings matinais personalizados e resumos à tarde com análise técnica, níveis de suporte/resistência e notícias de última hora que realmente importam para SEUS ativos."
   chat:
     title: "💬 Converse para Operar Melhor"
     text: "Faça perguntas, defina alertas, crie operações — basta conversar com seu Tutor e Companheiro de Trading com IA. Sem menus complicados. Sem tutoriais para assistir. Apenas uma conversa natural que fica mais inteligente a cada interação."
@@ -39,7 +39,7 @@ features:
 
 # How It Works
 how:
-  title: "Como o Zigna Funciona"
+  title: "Como Zigna.app Funciona"
   subtitle: "Comece sua jornada no trading em três etapas simples"
   step1:
     title: "Crie sua Conta"
@@ -55,7 +55,7 @@ how:
 pricing:
   title: "Planos de Investimento"
   subtitle: "Escolha o nível certo de inteligência de IA para sua jornada no trading"
-  best_value: "MELHOR VALOR"
+  best_value: "MELHOR ESCOLHA"
   starter:
     name: "Starter Predictor"
     price: "$19"
@@ -88,7 +88,7 @@ pricing:
 # CTA
 cta:
   title: "Pronto para Transformar seu Trading?"
-  text: "Junte-se a milhares de traders que estão aprendendo de forma mais inteligente e operando melhor com a plataforma de IA do Zigna."
+  text: "Junte-se a milhares de traders que estão aprendendo de forma mais inteligente e operando melhor com a plataforma de IA Zigna.app"
   btn: "Inicie seu Teste Grátis"
   note: "Não é necessário cartão de crédito • Teste gratuito de 30 dias • Cancele a qualquer momento"
 

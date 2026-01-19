@@ -169,8 +169,8 @@ title: Home
 
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="pricing-card highlighted">
+                        <div class="best-value">{% t pricing.best_value %}</div>
                         <div class="card-body">
-                            <div class="best-value">{% t pricing.best_value %}</div>
                             <h3 class="plan-name">{% t pricing.pro.name %}</h3>
                             <div class="plan-price">{% t pricing.pro.price %}<span>{% t pricing.starter.period %}</span></div>
                             <ul class="plan-features">
