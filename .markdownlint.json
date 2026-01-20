@@ -1,0 +1,33 @@
+{
+    "MD003": false,
+    "MD013": {
+        "line_length": 300
+    },
+    "MD033": {
+        "allowed_elements": [
+            "details",
+            "div",
+            "h1",
+            "h2",
+            "h3",
+            "header",
+            "img",
+            "i",
+            "main",
+            "p",
+            "strong",
+            "section",
+            "span",
+            "a",
+            "ul",
+            "li",
+            "form",
+            "input",
+            "textarea",
+            "button",
+            "summary"
+        ]
+    },
+    "MD036": false,
+    "MD040": false
+}
