@@ -4,6 +4,7 @@ nav:
   features: "Features"
   how_it_works: "How It Works"
   contact: "Contact"
+  blog: "Blog"
   app: "Go to App"
 
 # Hero Section
@@ -13,6 +14,7 @@ hero:
   subtitle: "Master profitable trading with personalized AI guidance, risk-free simulators, and real-time market intelligence. Zigna teaches you to trade smarter—not harder."
   get_started: "Get Started Free"
   sign_in: "Sign In"
+  alt_tutor: "AI Trading Tutor"
 
 # Features Section
 features:
@@ -84,6 +86,7 @@ pricing:
     rag_200k: "200,000 Analysis Storage (RAG)"
     rag_1m: "1,000,000 Analysis Storage (RAG)"
     rag_5m: "5,000,000 Analysis Storage (RAG)"
+    personalization: "Basic AI Personalization"
 
 # CTA
 cta:
@@ -99,6 +102,9 @@ contact:
   name_placeholder: "Your Name"
   email_placeholder: "Your Email"
   message_placeholder: "Your Message"
+  min_chars: "Minimum 4 characters"
+  message_optional: "Add a message if you'd like"
+  send_title: "Send"
   btn: "Send Message"
   loading: "Loading..."
   error: "Sorry! An error occurred while sending the form, please try again later."
@@ -109,3 +115,5 @@ contact:
 footer:
   text: "Your AI Trading Tutor, Monitor and Companion. Empowering traders with personalized AI guidance and real-time market intelligence."
   copyright: "All rights reserved."
+  menu: "Menu"
+  app: "App"

@@ -24,8 +24,7 @@ title: Home
                 </div>
             </div>
             <div class="col-lg-6 intro-img" data-aos="zoom-out" data-aos-delay="200">
-                <img src="{{ site.baseurl_root }}/assets/img/hero-ai.png" alt="AI Trading Tutor" class="img-fluid floating_animation">
-
+                <img src="{{ site.baseurl_root }}/assets/img/hero-ai.png" alt="{% t hero.alt_tutor %}" class="img-fluid floating_animation">
             </div>
         </div>
     </div>
@@ -39,7 +38,6 @@ title: Home
                 <h2>{% t features.title %}</h2>
                 <p>{% t features.subtitle %}</p>
             </header>
-
             <div class="row features-grid">
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card">
@@ -50,7 +48,6 @@ title: Home
                         <p>{% t features.professor.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -60,7 +57,6 @@ title: Home
                         <p>{% t features.chat.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -70,7 +66,6 @@ title: Home
                         <p>{% t features.intelligence.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -80,7 +75,6 @@ title: Home
                         <p>{% t features.risk_free.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -90,7 +84,6 @@ title: Home
                         <p>{% t features.alerts.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-card">
                         <div class="feature-icon">
@@ -103,7 +96,6 @@ title: Home
             </div>
         </div>
     </section><!-- End Features Section -->
-
     <!-- ======= How It Works Section ======= -->
     <section id="how-it-works" class="how-it-works-section">
         <div class="container" data-aos="fade-up">
@@ -111,7 +103,6 @@ title: Home
                 <h2>{% t how.title %}</h2>
                 <p>{% t how.subtitle %}</p>
             </header>
-
             <div class="row">
                 <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-delay="100">
                     <div class="step-card">
@@ -120,7 +111,6 @@ title: Home
                         <p>{% t how.step1.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-delay="200">
                     <div class="step-card">
                         <div class="step-number">2</div>
@@ -128,7 +118,6 @@ title: Home
                         <p>{% t how.step2.text %}</p>
                     </div>
                 </div>
-
                 <div class="col-lg-4 text-center" data-aos="fade-up" data-aos-delay="300">
                     <div class="step-card">
                         <div class="step-number">3</div>
@@ -139,7 +128,6 @@ title: Home
             </div>
         </div>
     </section><!-- End How It Works Section -->
-
     <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing-section">
         <div class="container" data-aos="fade-up">
@@ -147,7 +135,6 @@ title: Home
                 <h2>{% t pricing.title %}</h2>
                 <p>{% t pricing.subtitle %}</p>
             </header>
-
             <div class="row">
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="pricing-card">
@@ -159,14 +146,14 @@ title: Home
                                 <li><i class="fa fa-check"></i> 10 {% t pricing.features.alarms %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.rag_200k %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.insights_8 %}</li>
-                                <li><i class="fa fa-check"></i> Basic AI Personalization</li>
+                                <li><i class="fa fa-check"></i> {% t pricing.features.personalization %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.support_email %}</li>
                             </ul>
-                            <a href="https://www.zigna.app/signup?plan=starter" class="btn-pricing">{% t pricing.starter.btn %}</a>
+                            <a href="https://www.zigna.app/signup?plan=starter" class="btn-pricing">
+                            {% t pricing.starter.btn %}</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="pricing-card highlighted">
                         <div class="best-value">{% t pricing.best_value %}</div>
@@ -185,7 +172,6 @@ title: Home
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="pricing-card">
                         <div class="card-body">
@@ -206,7 +192,6 @@ title: Home
             </div>
         </div>
     </section><!-- End Pricing Section -->
-
     <!-- ======= CTA Section ======= -->
     <section id="cta" class="cta-section">
         <div class="container" data-aos="fade-up">
@@ -220,7 +205,6 @@ title: Home
             </div>
         </div>
     </section><!-- End CTA Section -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact">
         <div class="container-fluid" data-aos="fade-up">
@@ -236,18 +220,18 @@ title: Home
                             <div class="form-row">
                                 <div class="form-group col-lg-6">
                                     <input type="text" name="nombre" class="form-control" id="nombre"
-                                        placeholder="{% t contact.name_placeholder %}" data-rule="minlen:4" data-msg="Minimum 4 characters" />
+                                        placeholder="{% t contact.name_placeholder %}" data-rule="minlen:4" data-msg="{% t contact.min_chars %}" />
                                     <div class="validate"></div>
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="{% t contact.email_placeholder %}" data-rule="email" data-msg="Please enter a valid email" />
+                                        placeholder="{% t contact.email_placeholder %}" data-rule="email" data-msg="{% t contact.email_error %}" />
                                     <div class="validate"></div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control" name="mensaje" id="message" rows="5"
-                                    data-msg="Add a message if you'd like" placeholder="{% t contact.message_placeholder %}"></textarea>
+                                    data-msg="{% t contact.message_optional %}" placeholder="{% t contact.message_placeholder %}"></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">{% t contact.loading %}</div>
@@ -255,7 +239,7 @@ title: Home
                                 <div class="sent-message">{% t contact.success %}</div>
                             </div>
                             <div class="text-center">
-                                <button type="submit" title="Send" class="fa-inactive">{% t contact.btn %}</button>
+                                <button type="submit" title="{% t contact.send_title %}" class="fa-inactive">{% t contact.btn %}</button>
                             </div>
                             <div id="recaptcha-container"></div>
                         </form>

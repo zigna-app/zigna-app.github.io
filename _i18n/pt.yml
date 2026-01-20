@@ -4,6 +4,7 @@ nav:
   features: "Recursos"
   how_it_works: "Como Funciona"
   contact: "Contato"
+  blog: "Blog"
   app: "Ir para o App"
 
 # Hero Section
@@ -13,6 +14,7 @@ hero:
   subtitle: "Domine o trading com orientação personalizada de IA, simuladores sem risco e inteligência de mercado em tempo real. Zigna.app ensina você a operar de forma mais inteligente — não mais difícil."
   get_started: "Comece Grátis"
   sign_in: "Entrar"
+  alt_tutor: "Tutor de Trading com IA"
 
 # Features Section
 features:
@@ -84,6 +86,7 @@ pricing:
     rag_200k: "200.000 Armazenamento de Análise (RAG)"
     rag_1m: "1.000.000 Armazenamento de Análise (RAG)"
     rag_5m: "5.000.000 Armazenamento de Análise (RAG)"
+    personalization: "Personalização Básica de IA"
 
 # CTA
 cta:
@@ -99,6 +102,9 @@ contact:
   name_placeholder: "Seu Nome"
   email_placeholder: "Seu E-mail"
   message_placeholder: "Sua Mensagem"
+  min_chars: "Mínimo de 4 caracteres"
+  message_optional: "Adicione uma mensagem, se desejar"
+  send_title: "Enviar"
   btn: "Enviar Mensagem"
   loading: "Carregando..."
   error: "Desculpe! Ocorreu um erro ao enviar o formulário, tente novamente mais tarde."
@@ -109,3 +115,5 @@ contact:
 footer:
   text: "Seu Tutor, Monitor e Companheiro de Trading com IA. Capacitando traders com orientação personalizada de IA e inteligência de mercado em tempo real."
   copyright: "Todos os direitos reservados."
+  menu: "Menu"
+  app: "App"
