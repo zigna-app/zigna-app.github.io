@@ -1133,3 +1133,140 @@ body.light-mode .back-to-top:hover {
     color: var(--primary);
     transform: translateY(-5px);
 }
+
+/* Social Links Section */
+.social-links-section {
+    padding: 100px 0;
+    background: radial-gradient(circle at bottom left, #081133, black);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-card {
+    display: block;
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    padding: 40px;
+    border-radius: 28px;
+    height: 100%;
+    transition: var(--transition);
+    backdrop-filter: blur(16px);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.social-card:hover {
+    transform: translateY(-12px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--highlight);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 0 0 20px rgba(116, 181, 252, 0.1);
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    transition: var(--transition);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-card.facebook .social-icon {
+    background: linear-gradient(135deg, #1877F2, #0d46a0);
+}
+
+.social-card.instagram .social-icon {
+    background: linear-gradient(135deg, #833AB4, #FD1D1D, #F77737);
+}
+
+.social-card.linkedin .social-icon {
+    background: linear-gradient(135deg, #0077b5, #004471);
+}
+
+.social-card:hover .social-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.social-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.social-card p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Light Mode Overrides for Social Section */
+body.light-mode .social-links-section {
+    background: #f8f9fa;
+}
+
+body.light-mode .social-card {
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .social-card h3 {
+    color: #1a1a1a;
+}
+
+/* Footer Social Links */
+/* Footer Social Links */
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+#footer .social-links a i {
+    line-height: 0;
+}
+
+#footer .social-links a:hover {
+    background: var(--highlight);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Light Mode Overrides for Footer Social Links */
+body.light-mode #footer .social-links a {
+    background: rgba(0, 0, 0, 0.08);
+    color: #1a1a1a;
+}
+
+body.light-mode #footer .social-links a:hover {
+    background: var(--highlight);
+    color: #fff !important;
+    border: 1px solid var(--highlight);
+}
+
+/* Improvement for Dark Mode Hover Contrast */
+/* Ensure icon is visible against the light blue highlight in dark mode */
+body:not(.light-mode) #footer .social-links a:hover {
+    color: #020408 !important;
+    border: 1px solid var(--primary);
+
+}

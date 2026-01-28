@@ -111,6 +111,14 @@ contact:
   email_error: "Por favor ingresa un email válido"
   success: "Tu mensaje ha sido enviado. ¡Gracias!"
 
+# Social Section
+social:
+  title: "Únete a Nuestra Comunidad"
+  subtitle: "Síguenos en las redes para noticias, consejos de trading y actualizaciones."
+  facebook_text: "Conéctate con nuestra comunidad en Facebook"
+  instagram_text: "Síguenos para contenido visual y tips diarios"
+  linkedin_text: "Noticias corporativas y oportunidades profesionales"
+
 # Footer
 footer:
   text: "Tu Tutor, Monitor y Compañero de Trading con IA. Empoderando a los traders con guía personalizada de IA e inteligencia de mercado en tiempo real."

@@ -205,6 +205,46 @@ title: Home
             </div>
         </div>
     </section><!-- End CTA Section -->
+
+    <!-- ======= Social Links Section ======= -->
+    <section id="social-links" class="social-links-section">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h2>{% t social.title %}</h2>
+                <p>{% t social.subtitle %}</p>
+            </header>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="https://www.facebook.com/profile.php?id=61585954088992" target="_blank" class="social-card facebook">
+                        <div class="social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        <h3>Facebook</h3>
+                        <p>{% t social.facebook_text %}</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="https://www.instagram.com/zignalatam" target="_blank" class="social-card instagram">
+                        <div class="social-icon">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>{% t social.instagram_text %}</p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="https://www.linkedin.com/company/zigna-app/" target="_blank" class="social-card linkedin">
+                        <div class="social-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p>{% t social.linkedin_text %}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Social Links Section -->
+
     <!-- ======= Contact Section ======= -->
     <section id="contact">
         <div class="container-fluid" data-aos="fade-up">
