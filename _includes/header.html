@@ -12,8 +12,9 @@
     <div class="container">
 
         <div class="logo float-left">
-            <a href="{% tl home %}"><img src="{{ site.baseurl_root }}/assets/img/logo-twhite.png" alt=""
-                    class="img-fluid"></a>
+            <a href="{% tl home %}">
+                <img src="{{ site.baseurl_root }}/assets/img/logo-dark.svg" alt="Zigna" class="img-fluid">
+            </a>
         </div>
 
         <div class="header-tools float-right">
@@ -58,12 +59,18 @@
                 <li><a href="#contact">{% t nav.contact %}</a></li>
                 <li><a href="https://www.zigna.app/blog">{% t nav.blog %}</a></li>
                 <li class="drop-down lang-selector">
-                    <a href="#">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
-                            style="font-size: 10px; margin-left: 5px;"></i></a>
+                    {% assign lang_label = "English" %}
+                    {% if site.lang == "es" %}{% assign lang_label = "Español" %}{% endif %}
+                    {% if site.lang == "pt" %}{% assign lang_label = "Português" %}{% endif %}
+                    <a href="#" class="lang-selector-btn">
+                        <i class="fa fa-globe" style="font-size: 16px;"></i>
+                        <span style="margin: 0 5px;">{{ lang_label }}</span>
+                        <i class="fa fa-chevron-down" style="font-size: 10px;"></i>
+                    </a>
                     <ul>
-                        <li><a href="{% tl home en %}">EN</a></li>
-                        <li><a href="{% tl home es %}">ES</a></li>
-                        <li><a href="{% tl home pt %}">PT</a></li>
+                        <li><a href="{% tl home en %}">English</a></li>
+                        <li><a href="{% tl home es %}">Español</a></li>
+                        <li><a href="{% tl home pt %}">Português</a></li>
                     </ul>
                 </li>
                 <li style="margin-left: 10px;">

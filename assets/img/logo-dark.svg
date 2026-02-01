@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="273" viewBox="0 0 1024 273">
+    <defs>
+        <mask id="blueAreasMask">
+            <!-- White background = show everything -->
+            <rect width="1024" height="1024" fill="white" />
+            <!-- Black areas = hide (bottom V and top V should NOT show blue) -->
+            <polygon points="0,1024 512,512 1024,1024" fill="black" />
+            <polygon points="0,0 512,512 1024,0" fill="black" />
+        </mask>
+    </defs>
+
+    <!-- Icon Group: Scaled and Positioned -->
+    <!-- Scale: 0.30 (bigger) -->
+    <!-- Y Offset: (273 - 307) / 2 = ~ -17 -->
+    <!-- X Offset: 180 -->
+    <g transform="translate(90, -47) scale(0.36)">
+        <!-- Layer 2: White circle with 1px white border, radius ~489 points -->
+        <circle cx="512" cy="512" r="489" fill="transparent" stroke="transparent" stroke-width="2.65" />
+
+        <!-- Layer 3: Blue filled circle, radius ~79 points -->
+        <circle cx="512" cy="512" r="79" fill="#2c34ac" />
+
+        <!-- Layer 4 & 5: WHITE rings FIRST (full circles, no mask) -->
+        <circle cx="512" cy="512" r="211" fill="none" stroke="transparent" stroke-width="95" />
+        <circle cx="512" cy="512" r="370" fill="none" stroke="transparent" stroke-width="95" />
+
+        <!-- Layer 4 & 5: BLUE rings on top, masked to show only left and right sides -->
+        <g mask="url(#blueAreasMask)">
+            <circle cx="512" cy="512" r="211" fill="none" stroke="#2c34ac" stroke-width="95" />
+            <circle cx="512" cy="512" r="370" fill="none" stroke="#2c34ac" stroke-width="95" />
+        </g>
+    </g>
+
+    <!-- Text Group -->
+    <!-- Positioned to the right of the icon -->
+    <!-- Icon width end: ~260px. Gap increased. Start text at 320px -->
+    <!-- Vertically centered: ~195px baseline -->
+    <text x="510" y="185" font-family="'Inter','Roboto','Helvetica','Arial',sans-serif" font-weight="400" font-size="170" fill="white" letter-spacing="-2">
+    zigna
+    </text>
+</svg>

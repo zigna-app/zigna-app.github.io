@@ -14,7 +14,7 @@
     --text-muted: rgba(255, 255, 255, 0.7);
     --bg-dark: #020408;
     --glass: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.15);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -37,7 +37,7 @@ body.light-mode {
 }
 
 body {
-    font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-family: "Inter", "Roboto", "Helvetica", "Arial", sans-serif;
     background-color: #000;
     color: var(--text-main);
     overflow-x: hidden;
@@ -654,10 +654,12 @@ a:hover {
     z-index: 9999;
     width: 260px;
     left: -260px;
-    background: #020408;
+    /* background: #020408; */
+    background: #ff0000;
     transition: 0.5s;
     padding-top: 60px;
-    border-right: 1px solid var(--glass-border);
+    /* border-right: 1px solid var(--glass-border); */
+    border-right: 1px solid blue;
 }
 
 .mobile-nav-active .mobile-nav {
@@ -710,12 +712,14 @@ a:hover {
 
 /* Header & Navigation */
 #header {
-    height: 80px;
+    height: 69px;
+    min-height: 69px;
     transition: all 0.5s;
     z-index: 9998;
     /* Stay above overlay but below nav menu */
     transition: all 0.5s;
     background: rgba(2, 4, 8, 0.8) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
     display: flex;
@@ -842,14 +846,39 @@ a:hover {
     font-size: 14px;
     font-weight: 600;
     transition: 0.3s;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 0.5px;
+    border-radius: 8px;
+    text-decoration: none !important;
 }
 
 .main-nav .active>a,
-.main-nav li:hover>a {
+.main-nav li:hover>a,
+.main-nav a:hover {
+    color: var(--text-main) !important;
+}
+
+body.light-mode .main-nav .active>a,
+body.light-mode .main-nav a:hover {
+    color: var(--primary) !important;
+}
+
+
+body.light-mode .main-nav li.drop-down ul li:hover a {
+    background-color: rgba(0, 0, 0, 0.04);
+    color: var(--primary) !important;
+}
+
+body:not(.light-mode) .main-nav .active>a,
+body:not(.light-mode) .main-nav a:hover {
     color: var(--highlight) !important;
 }
+
+body:not(.light-mode) .main-nav li.drop-down ul li:hover a {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: var(--highlight) !important;
+}
+
 
 body .main-nav li:hover a.btn-app {
     text-decoration: none;
@@ -861,8 +890,37 @@ body .main-nav li:hover a.btn-app {
 
 
 
-.main-nav a:hover {
-    color: var(--primary) !important;
+
+
+/* Language Selector Button */
+.main-nav .lang-selector-btn {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.23);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: none !important;
+    /* Override uppercase if inherited */
+    font-weight: 500 !important;
+    gap: 0;
+    /* Spacing handled by margin in HTML or here */
+}
+
+.main-nav .lang-selector-btn:hover {
+    border-color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main) !important;
+}
+
+body.light-mode .main-nav .lang-selector-btn {
+    border-color: rgba(0, 0, 0, 0.23);
+    color: var(--text-main) !important;
+}
+
+body.light-mode .main-nav .lang-selector-btn:hover {
+    border-color: var(--text-main);
+    background: rgba(0, 0, 0, 0.05);
 }
 
 /* Theme Toggle Button */

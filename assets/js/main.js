@@ -172,12 +172,12 @@
                 $('body').addClass('light-mode');
                 iconSun.hide();
                 iconMoon.show();
-                if (logoImg.length) logoImg.attr('src', basePath + '/logo.png');
+                if (logoImg.length) logoImg.attr('src', basePath + '/logo-light.svg');
             } else {
                 $('body').removeClass('light-mode');
                 iconMoon.hide();
                 iconSun.show();
-                if (logoImg.length) logoImg.attr('src', basePath + '/logo-twhite.png');
+                if (logoImg.length) logoImg.attr('src', basePath + '/logo-dark.svg');
             }
         }
 
