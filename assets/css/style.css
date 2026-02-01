@@ -23,7 +23,7 @@ body.light-mode {
     --primary: #2c34ac;
     --primary-dark: #f8f9fa;
     --secondary: #313ac0;
-    --highlight: #2c34ac;
+    --highlight: #4A4AFF;
     --text-main: #1a1a1a;
     --text-muted: rgba(0, 0, 0, 0.6);
     --bg-dark: #ffffff;
@@ -1030,7 +1030,7 @@ body.light-mode .main-nav .drop-down ul a {
 }
 
 body.light-mode .mobile-nav-toggle i {
-    color: #1a1a1a;
+    color: #2c34ac;
 }
 
 body.light-mode .tool-list .drop-down ul {
@@ -1039,7 +1039,7 @@ body.light-mode .tool-list .drop-down ul {
 }
 
 body.light-mode .tool-list a {
-    color: #1a1a1a !important;
+    color: #2c34ac !important;
 }
 
 body.light-mode .back-to-top {

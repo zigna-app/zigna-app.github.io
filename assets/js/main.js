@@ -158,7 +158,8 @@
     // Theme Toggle Logic
     $(document).ready(function () {
         const themeToggle = $('.theme-toggle');
-        const themeIcon = themeToggle.find('i');
+        const iconMoon = themeToggle.find('.theme-icon-moon');
+        const iconSun = themeToggle.find('.theme-icon-sun');
         const logoImg = $('.logo img');
         const currentTheme = localStorage.getItem('theme');
 
@@ -169,11 +170,13 @@
         function setTheme(theme) {
             if (theme === 'light') {
                 $('body').addClass('light-mode');
-                themeIcon.removeClass('fa-moon-o').addClass('fa-sun-o');
+                iconSun.hide();
+                iconMoon.show();
                 if (logoImg.length) logoImg.attr('src', basePath + '/logo.png');
             } else {
                 $('body').removeClass('light-mode');
-                themeIcon.removeClass('fa-sun-o').addClass('fa-moon-o');
+                iconMoon.hide();
+                iconSun.show();
                 if (logoImg.length) logoImg.attr('src', basePath + '/logo-twhite.png');
             }
         }
