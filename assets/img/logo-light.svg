@@ -35,7 +35,7 @@
     <!-- Positioned to the right of the icon -->
     <!-- Icon width end: ~260px. Gap increased. Start text at 320px -->
     <!-- Vertically centered: ~195px baseline -->
-    <text x="510" y="185" font-family="'Inter','Roboto','Helvetica','Arial',sans-serif" font-weight="400" font-size="170" fill="gray" letter-spacing="-2">
+    <text x="510" y="185" font-family="'Roboto','Helvetica','Arial',sans-serif" font-weight="400" font-size="170" fill="gray" letter-spacing="-2">
     zigna
     </text>
 </svg>
