@@ -708,6 +708,12 @@ a:hover {
     display: none;
 }
 
+/* Mobile Navigation - Hide redundant tools */
+.mobile-nav .nav-theme-toggle,
+.mobile-nav .nav-ai-icon {
+    display: none !important;
+}
+
 
 /* Header & Navigation */
 #header {

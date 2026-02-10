@@ -73,7 +73,7 @@
                         <li><a href="{% tl home pt %}">Português</a></li>
                     </ul>
                 </li>
-                <li style="margin-left: 10px;">
+                <li class="nav-theme-toggle" style="margin-left: 10px;">
                     <a class="theme-toggle" href="javascript:void(0);">
                         <svg class="theme-icon-moon" style="width:20px;height:20px;fill:#2c34ac;display:none;"
                             viewBox="0 0 24 24">
@@ -87,13 +87,15 @@
                         </svg>
                     </a>
                 </li>
-                <li style="margin-left: 10px;">
+
+                <li class="nav-ai-icon" style="margin-left: 10px;">
                     <a href="https://zigna.app" target="_blank" title="{% t nav.ai_tutor_title %}"
                         style="padding: 0 10px; display: flex; align-items: center; justify-self: center;">
                         <img src="{{ site.baseurl_root }}/assets/img/icons-ai.svg" alt="AI"
                             style="width: 28px; height: 28px; vertical-align: middle;">
                     </a>
                 </li>
+
                 <li style="margin-left: 10px;"><a href="https://www.zigna.app" class="btn-app"
                         style="margin-left: 0 !important;">{% t nav.app_short %}</a></li>
             </ul>
