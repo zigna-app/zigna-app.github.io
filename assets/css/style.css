@@ -654,8 +654,7 @@ a:hover {
     z-index: 9999;
     width: 260px;
     left: -260px;
-    /* background: #020408; */
-    background: #ff0000;
+    background: #020408;
     transition: 0.5s;
     padding-top: 60px;
     /* border-right: 1px solid var(--glass-border); */
