@@ -22,18 +22,18 @@ hero:
 features:
   title: "¿Por qué elegir Zigna.app?"
   subtitle: "Tu plataforma completa de educación y monitoreo de trading impulsada por IA"
-  professor:
-    title: "🎓 Tu Profesor Personal de Trading"
-    text: "Nunca vuelvas a operar a ciegas. La IA de Zigna analiza tu portafolio 24/7, entregando informes matutinos personalizados y resúmenes vespertinos con análisis técnico, niveles de soporte/resistencia y noticias de última hora que realmente importan para TUS activos."
-  chat:
-    title: "💬 Chatea para Mejorar tus Operaciones"
-    text: "Haz preguntas, establece alertas, crea operaciones: simplemente habla con tu Tutor y Compañero de Trading con IA. Sin menús complicados. Sin tutoriales que ver. Solo una conversación natural que se vuelve más inteligente con cada interacción."
+  discipline:
+    title: "🧠 Opera con la disciplina que le falta al cerebro humano."
+    text: "Deja de ser víctima de tus propios impulsos y empieza a ejecutar con precisión digital."
+  signal:
+    title: "📡 Silencia el Ruido. Mira la Señal."
+    text: "Piensa como un Gestor de Portafolios. Zigna filtra el caos de los datos minoristas a través de una lente macro profesional, dándote la claridad para actuar cuando otros entran en pánico."
+  execution:
+    title: "⚙️ Operar no es un Juego de Azar."
+    text: "Ganar es un proceso; la maestría es el resultado. Zigna reprograma tus hábitos, transformando dudas constantes en un flujo de trabajo profesional y repetible."
   intelligence:
     title: "📊 Inteligencia de Mercado en Tiempo Real"
     text: "Mantente a la vanguardia con datos de mercado en vivo, indicadores técnicos e información impulsada por IA. Rastrea múltiples portafolios, establece alarmas de precios y recibe notificaciones instantáneas cuando surjan oportunidades."
-  risk_free:
-    title: "🛡️ Aprendizaje Sin Riesgo"
-    text: "Practica estrategias de trading en nuestro simulador antes de arriesgar dinero real. Aprende de tus errores sin consecuencias financieras y genera confianza antes de operar en vivo."
   alerts:
     title: "🔔 Alertas y Notificaciones Inteligentes"
     text: "Nunca pierdas una oportunidad de trading. Establece alertas de precios personalizadas, recibe notificaciones de noticias que mueven el mercado y obtén información generada por IA adaptada a tu portafolio."

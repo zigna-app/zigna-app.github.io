@@ -22,18 +22,18 @@ hero:
 features:
   title: "Why Choose Zigna.app?"
   subtitle: "Your complete AI-powered trading education and monitoring platform"
-  professor:
-    title: "🎓 Your Personal Trading Professor"
-    text: "Never trade blind again. Zigna's AI analyzes your portfolio 24/7, delivering personalized morning briefs and afternoon summaries with technical analysis, support/resistance levels, and breaking news that actually matters for YOUR assets."
-  chat:
-    title: "💬 Chat Your Way to Better Trades"
-    text: "Ask questions, set alerts, create trades—just talk to your AI Trading Tutor and Companion. No complicated menus. No tutorials to watch. Just natural conversation that gets smarter with every interaction."
+  discipline:
+    title: "🧠 Trade with the artificial discipline the human brain lacks."
+    text: "Stop being a victim of your own impulses and start executing with digital precision."
+  signal:
+    title: "📡 Silence the Noise. See the Signal."
+    text: "Think like a Portfolio Manager. Zigna filters the chaos of retail data through a professional macro-lens, giving you the clarity to act when others panic."
+  execution:
+    title: "⚙️ Execution is Not a Gamble."
+    text: "Winning is a process; mastery is the result. Zigna re-wires your trading habits, turning inconsistent guesses into a repeatable, professional workflow."
   intelligence:
     title: "📊 Real-Time Market Intelligence"
     text: "Stay ahead with live market data, technical indicators, and AI-powered insights. Track multiple portfolios, set price alarms, and get instant notifications when opportunities arise."
-  risk_free:
-    title: "🛡️ Risk-Free Learning"
-    text: "Practice trading strategies in our simulator before risking real money. Learn from your mistakes without financial consequences and build confidence before going live."
   alerts:
     title: "🔔 Smart Alerts & Notifications"
     text: "Never miss a trading opportunity. Set custom price alerts, get notified of market-moving news, and receive AI-generated insights tailored to your portfolio."

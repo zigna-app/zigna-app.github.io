@@ -44,8 +44,8 @@ title: Home
                         <div class="feature-icon">
                             <i class="fa fa-graduation-cap"></i>
                         </div>
-                        <h3>{% t features.professor.title %}</h3>
-                        <p>{% t features.professor.text %}</p>
+                        <h3>{% t features.discipline.title %}</h3>
+                        <p>{% t features.discipline.text %}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
@@ -53,8 +53,17 @@ title: Home
                         <div class="feature-icon">
                             <i class="fa fa-comments"></i>
                         </div>
-                        <h3>{% t features.chat.title %}</h3>
-                        <p>{% t features.chat.text %}</p>
+                        <h3>{% t features.signal.title %}</h3>
+                        <p>{% t features.signal.text %}</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-shield"></i>
+                        </div>
+                        <h3>{% t features.execution.title %}</h3>
+                        <p>{% t features.execution.text %}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
@@ -64,15 +73,6 @@ title: Home
                         </div>
                         <h3>{% t features.intelligence.title %}</h3>
                         <p>{% t features.intelligence.text %}</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-shield"></i>
-                        </div>
-                        <h3>{% t features.risk_free.title %}</h3>
-                        <p>{% t features.risk_free.text %}</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
