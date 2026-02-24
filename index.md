@@ -42,7 +42,7 @@ title: Home
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fa fa-graduation-cap"></i>
+                            <i class="fa fa-crosshairs"></i>
                         </div>
                         <h3>{% t features.discipline.title %}</h3>
                         <p>{% t features.discipline.text %}</p>
@@ -51,7 +51,7 @@ title: Home
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fa fa-comments"></i>
+                            <i class="fa fa-signal"></i>
                         </div>
                         <h3>{% t features.signal.title %}</h3>
                         <p>{% t features.signal.text %}</p>
@@ -60,7 +60,7 @@ title: Home
                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-card">
                         <div class="feature-icon">
-                            <i class="fa fa-shield"></i>
+                            <i class="fa fa-cogs"></i>
                         </div>
                         <h3>{% t features.execution.title %}</h3>
                         <p>{% t features.execution.text %}</p>
