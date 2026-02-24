@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 name: Zigna
-title: Zigna - Your AI Trading Tutor, Monitor and Companion
+title: Stop Trading Alone. Start Trading Smarter.
 # ---- Jekyll settings ----
 plugins:
   - jekyll-feed
@@ -39,7 +39,7 @@ parallel_localization: true
 
 author: Zigna
 description: >- # this means to ignore newlines until "baseurl:"
-  Master profitable trading with personalized AI guidance, risk-free simulators, and real-time market intelligence. Whether you're taking your first trade or refining your strategy, Zigna teaches you to trade smarter—not harder.
+  Stop guessing. Start winning. From your first trade to your thousandth, Zigna provides the real-time intelligence you need to trade smarter—never harder.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.zigna.app" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ZignaApp
