@@ -20,7 +20,7 @@
         <div class="header-tools float-right">
             <ul class="tool-list d-lg-none">
                 <li class="drop-down lang-selector">
-                    <a href="#">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
+                    <a href="javascript:void(0);">{{ site.lang | upcase }} <i class="fa fa-chevron-down"
                             style="font-size: 10px; margin-left: 5px;"></i></a>
                     <ul>
                         <li><a href="{% tl home en %}">EN</a></li>
@@ -62,7 +62,7 @@
                     {% assign lang_label = "English" %}
                     {% if site.lang == "es" %}{% assign lang_label = "Español" %}{% endif %}
                     {% if site.lang == "pt" %}{% assign lang_label = "Português" %}{% endif %}
-                    <a href="#" class="lang-selector-btn">
+                    <a href="javascript:void(0);" class="lang-selector-btn">
                         <i class="fa fa-globe" style="font-size: 16px;"></i>
                         <span style="margin: 0 5px;">{{ lang_label }}</span>
                         <i class="fa fa-chevron-down" style="font-size: 10px;"></i>
