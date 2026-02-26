@@ -1,23 +1,19 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Zigna site
 name: Zigna
 title: Stop Trading Alone. Start Trading Smarter.
-# ---- Jekyll settings ----
 
-# Multilingual settings
+# ---- Main settings ----
+author: Zigna
+description: >- # this means to ignore newlines until "baseurl:"
+  Stop guessing. Start winning. From your first trade to your thousandth, Zigna provides the real-time intelligence you need to trade smarter—never harder.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.zigna.app" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ZignaApp
+color_primary: "#2a31ab;"
+color_secondary: "#2b60f6;"
+google_analytics: "G-PP5MDV5HSH"
+
+# ---- Multi-Language Settings ----
 languages: ["en", "es", "pt"]
 default_lang: "en"
 exclude_from_localization:
@@ -33,20 +29,9 @@ exclude_from_localization:
   - "logo.png"
 parallel_localization: true
 
-author: Zigna
-description: >- # this means to ignore newlines until "baseurl:"
-  Stop guessing. Start winning. From your first trade to your thousandth, Zigna provides the real-time intelligence you need to trade smarter—never harder.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.zigna.app" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ZignaApp
-color_primary: "#2a31ab;"
-color_secondary: "#2b60f6;"
-
-# Build settings
+# ---- Jekyll settings ----
 markdown: kramdown
 permalink: pretty
-
-google_analytics: "G-PP5MDV5HSH"
 
 # Exclude directories and files
 exclude:
