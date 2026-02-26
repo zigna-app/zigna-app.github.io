@@ -16,10 +16,6 @@
 name: Zigna
 title: Stop Trading Alone. Start Trading Smarter.
 # ---- Jekyll settings ----
-plugins:
-  - jekyll-feed
-  - jekyll-multiple-languages-plugin
-  - jekyll-seo-tag
 
 # Multilingual settings
 languages: ["en", "es", "pt"]
