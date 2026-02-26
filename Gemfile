@@ -1,21 +1,27 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3.4"
+
+# Standard Ruby 3+ dependencies
 gem "logger"
 gem "csv"
 gem "ostruct"
 gem "base64"
 gem "webrick"
+gem "rexml", ">= 3.4.2"
+
+# Network dependencies
 gem "faraday-retry"
 
-# If you have any plugins, put them here!
+# Jekyll Plugins
 group :jekyll_plugins do
   gem "jekyll-feed"
-  gem "jekyll-multiple-languages-plugin"
   gem "jekyll-seo-tag"
+  gem "jekyll-multiple-languages-plugin"
+  gem "jekyll-timeago"
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# Windows and JRuby platform dependencies
 platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
