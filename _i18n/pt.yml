@@ -1,3 +1,7 @@
+# SEO
+seo:
+  home_title: "Pare de Operar Sozinho. Comece a Operar com Inteligência"
+
 # General
 nav:
   home: "Início"
@@ -123,7 +127,7 @@ social:
 
 # Footer
 footer:
-  text: "Seu Tutor, Monitor e Companheiro de Trading com IA. Capacitando traders com orientação personalizada de IA e inteligência de mercado em tempo real."
+  text: "Pare de Operar Sozinho. Comece a Operar com Inteligência. Capacitando traders com orientação personalizada de IA e inteligência de mercado em tempo real."
   copyright: "Todos os direitos reservados."
   menu: "Menu"
   app: "App"

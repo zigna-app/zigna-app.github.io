@@ -1,3 +1,7 @@
+# SEO
+seo:
+  home_title: "Stop Trading Alone. Start Trading Smarter"
+
 # General
 nav:
   home: "Home"
@@ -123,7 +127,7 @@ social:
 
 # Footer
 footer:
-  text: "Your AI Trading Tutor, Monitor and Companion. Empowering traders with personalized AI guidance and real-time market intelligence."
+  text: "Stop Trading Alone. Start Trading Smarter. Empowering traders with personalized AI guidance and real-time market intelligence."
   copyright: "All rights reserved."
   menu: "Menu"
   app: "App"
