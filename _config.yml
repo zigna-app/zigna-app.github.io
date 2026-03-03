@@ -1,9 +1,9 @@
 # Zigna site
-name: Zigna
+name: Zigna.app
 title: Stop Trading Alone. Start Trading Smarter.
 
 # ---- Main settings ----
-author: Zigna
+author: Zigna.app
 description: >- # this means to ignore newlines until "baseurl:"
   Stop guessing. Start winning. From your first trade to your thousandth, Zigna provides the real-time intelligence you need to trade smarter—never harder.
 baseurl: "" # the subpath of your site, e.g. /blog
