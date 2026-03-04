@@ -1,6 +1,6 @@
 # SEO
 seo:
-  home_title: "Deja de Operar Solo. Empieza a Operar con Inteligencia"
+  home_title: "Deja de Operar Solo. Opera con Inteligencia"
 
 # General
 nav:
@@ -16,7 +16,7 @@ nav:
 # Hero Section
 hero:
   title: "Deja de Operar Solo."
-  highlight: "Empieza a Operar con Inteligencia."
+  highlight: "Opera con Inteligencia."
   subtitle: "Basta de adivinanzas. Empieza a ganar. Desde tu primera operación hasta la milésima, Zigna te da la inteligencia en tiempo real para operar con estrategia."
   get_started: "Comienza Gratis"
   sign_in: "Iniciar Sesión"
@@ -127,7 +127,7 @@ social:
 
 # Footer
 footer:
-  text: "Deja de Operar Solo. Empieza a Operar con Inteligencia. Empoderando a los traders con guía personalizada de IA e inteligencia de mercado en tiempo real."
+  text: "Deja de Operar Solo. Opera con Inteligencia. Empoderando a los traders con guía personalizada de IA e inteligencia de mercado en tiempo real."
   copyright: "Todos los derechos reservados."
   menu: "Menú"
   app: "App"
