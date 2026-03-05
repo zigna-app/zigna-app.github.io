@@ -1,0 +1,6 @@
+{
+    "python.interpreterPath": "",
+    "python.analysis.ignore": [
+        "**"
+    ]
+}
