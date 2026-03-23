@@ -2,6 +2,21 @@
 layout: default
 ---
 
+<script>
+  (function() {
+    var path = window.location.pathname;
+    // Check if the path begins with /en/ or is exactly /en
+    if (path === '/en' || path === '/en/') {
+      window.location.replace('/' + window.location.search + window.location.hash);
+    } else if (path.startsWith('/en/')) {
+      // Remove the '/en' prefix (first 3 characters)
+      var newPath = path.substring(3);
+      window.location.replace(newPath + window.location.search + window.location.hash);
+    }
+  })();
+</script>
+
+
 <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
