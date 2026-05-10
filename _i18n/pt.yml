@@ -1,6 +1,6 @@
 # SEO
 seo:
-  home_title: "Opera com Inteligência"
+  home_title: "Seu escudo no mercado. Sua disciplina automatizada."
 
 # General
 nav:
@@ -15,8 +15,8 @@ nav:
 
 # Hero Section
 hero:
-  title: "Pare de Operar Sozinho."
-  highlight: "Opera com Inteligência."
+  title: "Seu escudo no mercado."
+  highlight: "Sua disciplina automatizada."
   subtitle: "Chega de palpites. Comece a vencer. Do primeiro trade ao milésimo, Zigna entrega a inteligência em tempo real que você precisa para operar com estratégia."
   get_started: "Comece Grátis"
   sign_in: "Entrar"
@@ -127,7 +127,7 @@ social:
 
 # Footer
 footer:
-  text: "Pare de Operar Sozinho. Opera com Inteligência. Capacitando traders com orientação personalizada de IA e inteligência de mercado em tempo real."
+  text: "Seu escudo no mercado. Sua disciplina automatizada. Capacitando traders com orientação personalizada de IA e inteligência de mercado em tempo real."
   copyright: "Todos os direitos reservados."
   menu: "Menu"
   app: "App"
