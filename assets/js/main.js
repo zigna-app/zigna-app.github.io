@@ -200,6 +200,20 @@
 function sendFormData() {
     window.recaptchaWidgetId = null;
 
+    let clientIp = 'Pending';
+    fetch('https://api64.ipify.org?format=json')
+      .then(res => {
+        if (res.ok) return res.json();
+        throw new Error('api64 failed');
+      })
+      .then(data => { clientIp = data.ip; })
+      .catch(err => {
+        fetch('https://api.ipify.org?format=json')
+          .then(res => res.json())
+          .then(data => { clientIp = data.ip; })
+          .catch(() => { clientIp = 'Unavailable'; });
+      });
+
     function restoreButtonState(form) {
         var button = $('button[type=submit]', form);
         button.prop('disabled', false);
@@ -240,12 +254,23 @@ function sendFormData() {
             return false;
         }
 
+        const screenRes = `${window.screen.width}x${window.screen.height}`;
+        const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown';
+        const clientLang = navigator.language || 'Unknown';
+        const clientTime = new Date().toLocaleString();
+
         var message = `
             ${messageInput}
             <br><hr>---
             <p><b>Reference</b>: ${href}</p>
             <p><b>Source</b>: ${source}</p>
             <p><b>Language</b>: ${lang}</p>
+            <p><b>Client Lang</b>: ${clientLang}</p>
+            <p><b>IP</b>: ${clientIp}</p>
+            <p><b>Timezone</b>: ${userTimeZone}</p>
+            <p><b>Screen</b>: ${screenRes}</p>
+            <p><b>Submitted</b>: ${clientTime}</p>
+            <p><b>UA</b>: ${navigator.userAgent}</p>
         `;
 
         $('.fa-inactive', form).addClass('fa-active');
