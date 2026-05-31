@@ -294,7 +294,8 @@ function sendFormData() {
                 }
             },
             error: function () {
-                restoreButtonState(form);
+                // Google Forms returns a CORS error even on success. We treat it as a success.
+                $("#contact .form").html('<p class="nea-form-sent">' + thanks + '</p>');
             }
         });
     }
