@@ -1,0 +1,16 @@
+<!-- ======= WhatsApp Floating Widget ======= -->
+<div class="whatsapp-floating-widget" id="whatsappFloatingWidget">
+    <div class="whatsapp-floating-tooltip" role="tooltip">
+        <div class="whatsapp-tooltip-header">
+            <span class="whatsapp-tooltip-status"></span>
+            <span class="whatsapp-tooltip-title">{% t whatsapp.status_online %}</span>
+        </div>
+        <p class="whatsapp-tooltip-text">{% t whatsapp.floating_tooltip %}</p>
+        <span class="whatsapp-tooltip-arrow"></span>
+    </div>
+    <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="whatsapp-floating-btn" aria-label="{% t whatsapp.floating_tooltip %}">
+        <span class="whatsapp-pulse-ring"></span>
+        <i class="fa fa-whatsapp"></i>
+        <span class="whatsapp-online-dot" aria-hidden="true"></span>
+    </a>
+</div>

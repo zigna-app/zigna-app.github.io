@@ -9,11 +9,13 @@
                     <p>{% t footer.text %}</p>
                     <div class="social-links mt-3">
                         <a href="https://www.facebook.com/profile.php?id=61585954088992" class="facebook"
-                            target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/zignalatam" class="instagram" target="_blank"><i
-                                class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/company/zigna-app/" class="linkedin" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
+                            target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/zignalatam" class="instagram" target="_blank"
+                            rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/zigna-app/" class="linkedin" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a href="{% t whatsapp.url %}" class="whatsapp" target="_blank"
+                            rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -22,6 +24,7 @@
                     <ul>
                         <li><a href="{% tl home %}">{% t nav.home %}</a></li>
                         <li><a href="#features">{% t nav.features %}</a></li>
+                        <li><a href="#whatsapp-showcase">WhatsApp AI</a></li>
                         <li><a href="#how-it-works">{% t nav.how_it_works %}</a></li>
                         <li><a href="#contact">{% t nav.contact %}</a></li>
                         <li><a href="https://www.zigna.app">{% t footer.app %}</a></li>

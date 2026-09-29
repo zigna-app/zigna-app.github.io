@@ -18,9 +18,19 @@ title: Home
             <div class="col-lg-6 intro-info" data-aos="zoom-in" data-aos-delay="100">
                 <h1 class="hero-title">{% t hero.title %} <span class="highlight">{% t hero.highlight %}</span></h1>
                 <p class="hero-subtitle">{% t hero.subtitle %}</p>
-                <div class="hero-cta">
-                    <a href="https://www.zigna.app/signup" class="btn-get-started">{% t hero.get_started %}</a>
-                    <a href="https://www.zigna.app/login" class="btn-secondary">{% t hero.sign_in %}</a>
+                <div class="hero-cta-wrapper">
+                    <div class="hero-cta">
+                        <a href="https://www.zigna.app/signup" class="btn-get-started">{% t hero.get_started %}</a>
+                        <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-hero" aria-label="{% t whatsapp.cta_hero %}">
+                            <i class="fa fa-whatsapp"></i>
+                            <span>{% t whatsapp.cta_hero %}</span>
+                            <span class="badge-free">{% t whatsapp.hero_badge %}</span>
+                        </a>
+                    </div>
+                    <div class="hero-signin-prompt">
+                        <span>{% t hero.already_account %}</span>
+                        <a href="https://www.zigna.app/login" class="hero-signin-link">{% t hero.sign_in %} <i class="fa fa-angle-right"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 intro-img" data-aos="zoom-out" data-aos-delay="200">
@@ -96,6 +106,138 @@ title: Home
             </div>
         </div>
     </section><!-- End Features Section -->
+
+    <!-- ======= WhatsApp Showcase Section ======= -->
+    <section id="whatsapp-showcase" class="whatsapp-showcase-section">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h2>{% t whatsapp.feature_title %}</h2>
+                <p>{% t whatsapp.feature_subtitle %}</p>
+            </header>
+
+            <div class="whatsapp-showcase-wrapper">
+                <div class="row align-items-center">
+                    <!-- WhatsApp Mobile Mockup -->
+                    <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
+                        <div class="whatsapp-phone-frame">
+                            <div class="whatsapp-phone-header">
+                                <div class="wa-contact-info">
+                                    <div class="wa-avatar">
+                                        <img src="{{ site.baseurl_root }}/assets/img/favicon.png" alt="Max AI" width="38" height="38">
+                                        <span class="wa-avatar-status"></span>
+                                    </div>
+                                    <div class="wa-contact-meta">
+                                        <h4>{% t whatsapp.chat_preview_sender %}</h4>
+                                        <p><span class="wa-online-pulse"></span> {% t whatsapp.chat_preview_status %}</p>
+                                    </div>
+                                </div>
+                                <div class="wa-header-actions">
+                                    <i class="fa fa-phone"></i>
+                                    <i class="fa fa-video-camera"></i>
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+
+                            <div class="whatsapp-chat-body">
+                                <div class="wa-message-date">
+                                    <span>{% t whatsapp.chat_preview_time %}</span>
+                                </div>
+
+                                <!-- User Outgoing Message -->
+                                <div class="wa-message wa-msg-out">
+                                    <p>{% t whatsapp.chat_preview_user %}</p>
+                                    <div class="wa-msg-meta">
+                                        <span>{% t whatsapp.chat_preview_user_time %}</span>
+                                        <i class="fa fa-check-circle wa-read-check"></i>
+                                    </div>
+                                </div>
+
+                                <!-- Bot Incoming Message -->
+                                <div class="wa-message wa-msg-in">
+                                    <div class="wa-msg-badge">{% t whatsapp.chat_tag_analysis %}</div>
+                                    <h5>{% t whatsapp.chat_preview_bot_title %}</h5>
+                                    <p>{% t whatsapp.chat_preview_bot_text %}</p>
+                                    <ul class="wa-msg-levels">
+                                        <li><strong>{% t whatsapp.chat_preview_bot_res %}</strong> $228.00</li>
+                                        <li><strong>{% t whatsapp.chat_preview_bot_sup %}</strong> $221.80</li>
+                                        <li><strong>{% t whatsapp.chat_preview_bot_bias %}</strong> <span class="wa-bias-tag">{% t whatsapp.chat_preview_bot_bias_val %}</span></li>
+                                    </ul>
+                                    <div class="wa-msg-meta">
+                                        <span>{% t whatsapp.chat_preview_bot_time %}</span>
+                                    </div>
+                                </div>
+
+                                <!-- Interactive Action Chips -->
+                                <div class="wa-action-chips">
+                                    <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="wa-chip">{% t whatsapp.chat_tag_analysis %}</a>
+                                    <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="wa-chip">{% t whatsapp.chat_tag_brief %}</a>
+                                    <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="wa-chip">{% t whatsapp.chat_tag_alarm %}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Value Proposition & QR Code Access -->
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                        <div class="whatsapp-info-panel">
+                            <p class="wa-hero-description">{% t whatsapp.feature_desc %}</p>
+
+                            <div class="wa-benefits-list">
+                                <div class="wa-benefit-item">
+                                    <div class="wa-benefit-icon">
+                                        <i class="fa fa-bolt"></i>
+                                    </div>
+                                    <div class="wa-benefit-text">
+                                        <h4>{% t whatsapp.benefit_1_title %}</h4>
+                                        <p>{% t whatsapp.benefit_1_desc %}</p>
+                                    </div>
+                                </div>
+                                <div class="wa-benefit-item">
+                                    <div class="wa-benefit-icon">
+                                        <i class="fa fa-line-chart"></i>
+                                    </div>
+                                    <div class="wa-benefit-text">
+                                        <h4>{% t whatsapp.benefit_2_title %}</h4>
+                                        <p>{% t whatsapp.benefit_2_desc %}</p>
+                                    </div>
+                                </div>
+                                <div class="wa-benefit-item">
+                                    <div class="wa-benefit-icon">
+                                        <i class="fa fa-shield"></i>
+                                    </div>
+                                    <div class="wa-benefit-text">
+                                        <h4>{% t whatsapp.benefit_3_title %}</h4>
+                                        <p>{% t whatsapp.benefit_3_desc %}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="whatsapp-access-box">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-5 text-center mb-3 mb-sm-0">
+                                        <div class="whatsapp-qr-card">
+                                            <img src="{{ site.baseurl_root }}/assets/img/qr-whatsapp.svg" alt="WhatsApp QR Code" class="img-fluid wa-qr-img" width="140" height="140">
+                                            <span class="wa-qr-label">{% t whatsapp.scan_qr_hint %}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="wa-cta-box">
+                                            <h4>{% t whatsapp.scan_qr %}</h4>
+                                            <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
+                                                <i class="fa fa-whatsapp"></i>
+                                                <span>{% t whatsapp.open_chat %}</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End WhatsApp Showcase Section -->
     <!-- ======= How It Works Section ======= -->
     <section id="how-it-works" class="how-it-works-section">
         <div class="container" data-aos="fade-up">
