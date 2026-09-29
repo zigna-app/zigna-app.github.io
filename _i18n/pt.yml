@@ -150,6 +150,8 @@ whatsapp:
   benefit_3_desc: "Max e Aura te acompanham em cada operação com método profissional e disciplina."
   scan_qr: "Escaneie o código para começar"
   scan_qr_hint: "Aponte a câmera do seu celular"
+  mobile_cta_title: "Converse com Max instantaneamente"
+  mobile_cta_note: "⚡ Acesso imediato • Sem necessidade de download"
   open_chat: "Abrir no WhatsApp"
   chat_preview_sender: "Max • Tutor IA"
   chat_preview_status: "online"

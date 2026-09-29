@@ -150,6 +150,8 @@ whatsapp:
   benefit_3_desc: "Max and Aura guide your journey with professional, disciplined financial intelligence."
   scan_qr: "Scan QR code to start"
   scan_qr_hint: "Point your smartphone camera"
+  mobile_cta_title: "Chat with Max instantly"
+  mobile_cta_note: "⚡ Instant access • No download required"
   open_chat: "Open in WhatsApp"
   chat_preview_sender: "Max • AI Tutor"
   chat_preview_status: "online"

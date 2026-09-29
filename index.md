@@ -214,19 +214,21 @@ title: Home
 
                             <div class="whatsapp-access-box">
                                 <div class="row align-items-center">
-                                    <div class="col-sm-5 text-center mb-3 mb-sm-0">
+                                    <div class="col-md-5 text-center mb-4 mb-md-0 d-none d-md-block">
                                         <div class="whatsapp-qr-card">
-                                            <img src="{{ site.baseurl_root }}/assets/img/qr-whatsapp.svg" alt="WhatsApp QR Code" class="img-fluid wa-qr-img" width="140" height="140">
+                                            <img src="{{ site.baseurl_root }}/assets/img/qr-whatsapp.svg" alt="WhatsApp QR Code" class="img-fluid wa-qr-img" width="135" height="135">
                                             <span class="wa-qr-label">{% t whatsapp.scan_qr_hint %}</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-7">
+                                    <div class="col-md-7">
                                         <div class="wa-cta-box">
-                                            <h4>{% t whatsapp.scan_qr %}</h4>
-                                            <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta">
+                                            <h4 class="d-none d-md-block">{% t whatsapp.scan_qr %}</h4>
+                                            <h4 class="d-md-none">{% t whatsapp.mobile_cta_title %}</h4>
+                                            <a href="{% t whatsapp.url %}" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-cta" aria-label="{% t whatsapp.open_chat %}">
                                                 <i class="fa fa-whatsapp"></i>
                                                 <span>{% t whatsapp.open_chat %}</span>
                                             </a>
+                                            <p class="wa-cta-trust-note">{% t whatsapp.mobile_cta_note %}</p>
                                         </div>
                                     </div>
                                 </div>
