@@ -205,6 +205,12 @@
 
                 $('.pricing-card').each(function () {
                     const card = $(this);
+                    const originalEl = card.find('.price-original');
+                    const originalPrice = originalEl.attr('data-original');
+                    if (originalPrice) {
+                        originalEl.text(originalPrice).fadeIn(180);
+                    }
+
                     const priceEl = card.find('.price-val');
                     const annualPrice = priceEl.attr('data-annual');
                     if (annualPrice) {
@@ -229,6 +235,9 @@
 
                 $('.pricing-card').each(function () {
                     const card = $(this);
+                    const originalEl = card.find('.price-original');
+                    originalEl.fadeOut(150);
+
                     const priceEl = card.find('.price-val');
                     const monthlyPrice = priceEl.attr('data-monthly');
                     if (monthlyPrice) {

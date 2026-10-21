@@ -301,6 +301,7 @@ title: Home
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.starter.name %}</h3>
                             <div class="plan-price">
+                                <span class="price-original" data-original="{% t pricing.starter.price %}">{% t pricing.starter.price %}</span>
                                 <span class="price-val" data-monthly="{% t pricing.starter.price %}" data-annual="{% t pricing.starter.price_annual %}">{% t pricing.starter.price %}</span>
                                 <span class="price-period">{% t pricing.starter.period %}</span>
                             </div>
@@ -324,6 +325,7 @@ title: Home
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.pro.name %}</h3>
                             <div class="plan-price">
+                                <span class="price-original" data-original="{% t pricing.pro.price %}">{% t pricing.pro.price %}</span>
                                 <span class="price-val" data-monthly="{% t pricing.pro.price %}" data-annual="{% t pricing.pro.price_annual %}">{% t pricing.pro.price %}</span>
                                 <span class="price-period">{% t pricing.starter.period %}</span>
                             </div>
@@ -345,6 +347,7 @@ title: Home
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.enterprise.name %}</h3>
                             <div class="plan-price">
+                                <span class="price-original" data-original="{% t pricing.enterprise.price %}">{% t pricing.enterprise.price %}</span>
                                 <span class="price-val" data-monthly="{% t pricing.enterprise.price %}" data-annual="{% t pricing.enterprise.price_annual %}">{% t pricing.enterprise.price %}</span>
                                 <span class="price-period">{% t pricing.starter.period %}</span>
                             </div>
