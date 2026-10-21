@@ -48,35 +48,46 @@ features:
 
 # How It Works
 how:
-  title: "Como Zigna.app Funciona"
-  subtitle: "Comece sua jornada no trading em três etapas simples"
+  title: "Como Funciona o Zigna"
+  subtitle: "Comece sua jornada no trading em três passos simples"
   step1:
-    title: "Crie sua Conta"
-    text: "Inscreva-se gratuitamente e complete seu perfil de trading. Conte-nos sobre seus objetivos, nível de experiência e ativos preferidos."
+    title: "Defina suas Regras de Risco"
+    text: "Configure seu perfil e limites de risco. A IA calibra as análises segundo seus objetivos."
   step2:
-    title: "Conheça seu Tutor de IA"
-    text: "Seja pareado com um tutor de trading de IA personalizado que entende seu portfólio e estilo de aprendizado. Comece a conversar imediatamente."
+    title: "Ative seu Escudo IA"
+    text: "Vincule seus ativos e ative Max. Seu tutor monitora suportes, resistências e divergências 24/7."
   step3:
-    title: "Aprenda e Opere com Inteligência"
-    text: "Receba briefings diários, faça perguntas a qualquer momento, defina alertas e execute operações — tudo guiado por seu companheiro de IA."
+    title: "Proteja seu Capital"
+    text: "Opere com disciplina apoiado em análise quantitativa, reduzindo o viés emocional e blindando seu capital."
 
 # Pricing
 pricing:
   title: "Planos de Investimento"
   subtitle: "Escolha o nível certo de inteligência de IA para sua jornada no trading"
   best_value: "MELHOR ESCOLHA"
+  billing_monthly: "Mensal"
+  billing_annual: "Anual"
+  billing_toggle_aria: "Alternar ciclo de faturamento mensal ou anual"
+  guaranteed_gain_badge: "Ganho garantido: -20%"
   starter:
     name: "Starter Predictor"
     price: "$19"
+    price_annual: "$15"
+    annual_billed: "$180 faturado anualmente"
     period: "/mês"
     btn: "Começar Starter"
   pro:
     name: "Pro Predictor"
     price: "$99"
+    price_annual: "$79"
+    annual_billed: "$948 faturado anualmente"
+    period: "/mês"
     btn: "Iniciar Teste Pro"
   enterprise:
     name: "Enterprise Predictor"
     price: "$129"
+    price_annual: "$99"
+    annual_billed: "$1.188 faturado anualmente"
     period: "/mês"
     btn: "Contatar Vendas"
   features:
@@ -148,11 +159,11 @@ whatsapp:
   benefit_2_desc: "Consulte cotações, indicadores técnicos e níveis de suporte/resistência instantaneamente."
   benefit_3_title: "Tutoria Personalizada 24/7"
   benefit_3_desc: "Max e Aura te acompanham em cada operação com método profissional e disciplina."
-  scan_qr: "Escaneie o código para começar"
+  scan_qr: "Escaneie para sua primeira avaliação de risco gratuita"
   scan_qr_hint: "Aponte a câmera do seu celular"
-  mobile_cta_title: "Converse com Max instantaneamente"
+  mobile_cta_title: "Avaliação de risco gratuita instantânea"
   mobile_cta_note: "⚡ Acesso imediato • Sem necessidade de download"
-  open_chat: "Abrir no WhatsApp"
+  open_chat: "Obter minha avaliação de risco grátis"
   chat_preview_sender: "Max • Tutor IA"
   chat_preview_status: "online"
   chat_preview_time: "Hoje"
@@ -168,4 +179,4 @@ whatsapp:
   chat_tag_analysis: "📈 Análise Técnica"
   chat_tag_brief: "☕ Morning Brief"
   chat_tag_alarm: "🔔 Criar Alarme"
-  url: "https://wa.me/5588992730372?text=Ol%C3%A1%20Zigna%2C%20quero%20testar%20a%20plataforma%20pela%20web"
+  url: "https://wa.me/5588992730372?text=Ol%C3%A1%20Zigna%2C%20quero%20minha%20primeira%20avalia%C3%A7%C3%A3o%20de%20risco%20gratuita"

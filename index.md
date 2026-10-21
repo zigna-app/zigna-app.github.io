@@ -119,8 +119,9 @@ title: Home
                 <div class="row align-items-center">
                     <!-- WhatsApp Mobile Mockup -->
                     <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right" data-aos-delay="100">
-                        <div class="whatsapp-phone-frame">
-                            <div class="whatsapp-phone-header">
+                        <div class="whatsapp-phone-glow-wrapper">
+                            <div class="whatsapp-phone-frame">
+                                <div class="whatsapp-phone-header">
                                 <div class="wa-contact-info">
                                     <div class="wa-avatar">
                                         <img src="{{ site.baseurl_root }}/assets/img/favicon.png" alt="Max AI" width="38" height="38">
@@ -176,8 +177,9 @@ title: Home
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Value Proposition & QR Code Access -->
+                <!-- Value Proposition & QR Code Access -->
                     <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
                         <div class="whatsapp-info-panel">
                             <p class="wa-hero-description">{% t whatsapp.feature_desc %}</p>
@@ -279,12 +281,30 @@ title: Home
                 <h2>{% t pricing.title %}</h2>
                 <p>{% t pricing.subtitle %}</p>
             </header>
+
+            <!-- Billing Cycle Toggle (Monthly / Annual) -->
+            <div class="pricing-toggle-wrapper" data-aos="fade-up" data-aos-delay="50">
+                <span class="billing-cycle-label monthly active">{% t pricing.billing_monthly %}</span>
+                <label class="pricing-switch" for="billing-toggle">
+                    <input type="checkbox" id="billing-toggle" aria-label="{% t pricing.billing_toggle_aria %}">
+                    <span class="pricing-slider"></span>
+                </label>
+                <span class="billing-cycle-label annual">
+                    {% t pricing.billing_annual %}
+                    <span class="badge-guaranteed">{% t pricing.guaranteed_gain_badge %}</span>
+                </span>
+            </div>
+
             <div class="row">
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pricing-card">
+                    <div class="pricing-card" data-plan="starter">
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.starter.name %}</h3>
-                            <div class="plan-price">{% t pricing.starter.price %}<span>{% t pricing.starter.period %}</span></div>
+                            <div class="plan-price">
+                                <span class="price-val" data-monthly="{% t pricing.starter.price %}" data-annual="{% t pricing.starter.price_annual %}">{% t pricing.starter.price %}</span>
+                                <span class="price-period">{% t pricing.starter.period %}</span>
+                            </div>
+                            <div class="annual-billed-hint" data-annual-hint="{% t pricing.starter.annual_billed %}"></div>
                             <ul class="plan-features">
                                 <li><i class="fa fa-check"></i> 3 {% t pricing.features.portfolios %}</li>
                                 <li><i class="fa fa-check"></i> 10 {% t pricing.features.alarms %}</li>
@@ -293,17 +313,21 @@ title: Home
                                 <li><i class="fa fa-check"></i> {% t pricing.features.personalization %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.support_email %}</li>
                             </ul>
-                            <a href="https://www.zigna.app/signup?plan=starter" class="btn-pricing">
+                            <a href="https://www.zigna.app/signup?plan=starter" class="btn-pricing" data-base-href="https://www.zigna.app/signup?plan=starter">
                             {% t pricing.starter.btn %}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing-card highlighted">
+                    <div class="pricing-card highlighted" data-plan="pro">
                         <div class="best-value">{% t pricing.best_value %}</div>
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.pro.name %}</h3>
-                            <div class="plan-price">{% t pricing.pro.price %}<span>{% t pricing.starter.period %}</span></div>
+                            <div class="plan-price">
+                                <span class="price-val" data-monthly="{% t pricing.pro.price %}" data-annual="{% t pricing.pro.price_annual %}">{% t pricing.pro.price %}</span>
+                                <span class="price-period">{% t pricing.starter.period %}</span>
+                            </div>
+                            <div class="annual-billed-hint" data-annual-hint="{% t pricing.pro.annual_billed %}"></div>
                             <ul class="plan-features">
                                 <li><i class="fa fa-check"></i> 10 {% t pricing.features.portfolios %}</li>
                                 <li><i class="fa fa-check"></i> 50 {% t pricing.features.alarms %}</li>
@@ -312,15 +336,19 @@ title: Home
                                 <li><i class="fa fa-check"></i> {% t pricing.features.customization %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.support_priority %}</li>
                             </ul>
-                            <a href="https://www.zigna.app/signup?plan=pro" class="btn-pricing primary">{% t pricing.pro.btn %}</a>
+                            <a href="https://www.zigna.app/signup?plan=pro" class="btn-pricing primary" data-base-href="https://www.zigna.app/signup?plan=pro">{% t pricing.pro.btn %}</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="pricing-card">
+                    <div class="pricing-card" data-plan="enterprise">
                         <div class="card-body">
                             <h3 class="plan-name">{% t pricing.enterprise.name %}</h3>
-                            <div class="plan-price">{% t pricing.enterprise.price %}<span>{% t pricing.starter.period %}</span></div>
+                            <div class="plan-price">
+                                <span class="price-val" data-monthly="{% t pricing.enterprise.price %}" data-annual="{% t pricing.enterprise.price_annual %}">{% t pricing.enterprise.price %}</span>
+                                <span class="price-period">{% t pricing.starter.period %}</span>
+                            </div>
+                            <div class="annual-billed-hint" data-annual-hint="{% t pricing.enterprise.annual_billed %}"></div>
                             <ul class="plan-features">
                                 <li><i class="fa fa-check"></i> 50 {% t pricing.features.portfolios %}</li>
                                 <li><i class="fa fa-check"></i> 200 {% t pricing.features.alarms %}</li>
@@ -329,7 +357,7 @@ title: Home
                                 <li><i class="fa fa-check"></i> {% t pricing.features.api %}</li>
                                 <li><i class="fa fa-check"></i> {% t pricing.features.support_dedicated %}</li>
                             </ul>
-                            <a href="https://www.zigna.app/signup?plan=enterprise" class="btn-pricing">{% t pricing.enterprise.btn %}</a>
+                            <a href="https://www.zigna.app/signup?plan=enterprise" class="btn-pricing" data-base-href="https://www.zigna.app/signup?plan=enterprise">{% t pricing.enterprise.btn %}</a>
                         </div>
                     </div>
                 </div>

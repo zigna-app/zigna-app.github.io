@@ -10,29 +10,35 @@
     /* Official Zigna Green */
     --highlight: #74b5fc;
     --accent-success: #51cf66;
-    --text-main: #f8f9fa;
-    --text-muted: rgba(255, 255, 255, 0.7);
+    --text-main: #F0F4F8; /* Blanco Pizarra anti-halación */
+    --text-muted: #94A3B8; /* Gris Frío Claro WCAG AA/AAA */
+    --text-accent: #60A5FA; /* Azul Institucional Aclarado */
     --bg-dark: #020408;
+    --bg-wa-showcase: #1A233A; /* Tinte de Marca Profundo */
+    --border-divider: #2C364A; /* Divisor Físico Sutil */
     --glass: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-border: rgba(255, 255, 255, 0.12);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Light Mode Overrides */
 body.light-mode {
-    --primary: #2c34ac;
-    --primary-dark: #f8f9fa;
-    --secondary: #313ac0;
-    --highlight: #4A4AFF;
-    --text-main: #1a1a1a;
-    --text-muted: rgba(0, 0, 0, 0.6);
-    --bg-dark: #ffffff;
-    --glass: rgba(0, 0, 0, 0.03);
-    --glass-border: rgba(0, 0, 0, 0.1);
+    --primary: #2563EB;
+    --primary-dark: #1E40AF;
+    --secondary: #25D366;
+    --highlight: #3B82F6;
+    --text-main: #0F172A; /* Azul Pizarra Muy Oscuro */
+    --text-muted: #475569; /* Gris Pizarra Medio */
+    --text-accent: #2563EB;
+    --bg-dark: #F8FAFC; /* Base Clara Anti-Deslumbramiento */
+    --bg-wa-showcase: #F1F5F9;
+    --border-divider: #E2E8F0;
+    --glass: #FFFFFF;
+    --glass-border: rgba(226, 232, 240, 0.8);
 }
 
 body.light-mode {
-    background-color: #fff;
+    background-color: var(--bg-dark);
     color: var(--text-main);
 }
 
@@ -227,16 +233,16 @@ a:hover {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    color: #ffffff !important;
+    background: rgba(37, 211, 102, 0.08);
+    color: #25D366 !important;
     padding: 14px 26px;
     border-radius: 14px;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.05rem;
     text-decoration: none;
     transition: var(--transition);
-    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1.5px solid #25D366;
+    box-shadow: none;
     line-height: 1.4;
     min-height: 52px;
 }
@@ -244,25 +250,27 @@ a:hover {
 .hero-cta .btn-whatsapp-hero i {
     font-size: 1.3rem;
     line-height: 1;
+    color: #25D366;
 }
 
 .hero-cta .btn-whatsapp-hero .badge-free {
-    background: rgba(0, 0, 0, 0.25);
-    color: #ffffff;
+    background: rgba(37, 211, 102, 0.18);
+    color: #25D366;
     font-size: 0.72rem;
     padding: 3px 8px;
     border-radius: 20px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(37, 211, 102, 0.35);
 }
 
 .hero-cta .btn-whatsapp-hero:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.55);
-    background: linear-gradient(135deg, #2ae06d, #16a392);
-    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.2);
+    background: rgba(37, 211, 102, 0.16);
+    color: #2ee274 !important;
+    border-color: #2ee274;
 }
 
 .hero-signin-prompt {
@@ -373,8 +381,9 @@ a:hover {
 }
 
 .feature-card p {
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.65;
+    color: var(--text-muted);
+    font-weight: 500;
     margin-bottom: 0;
 }
 
@@ -403,6 +412,15 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.step-card p {
+    line-height: 1.65;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0;
 }
 
 /* CTA Section */
@@ -532,6 +550,105 @@ a:hover {
     background: #000;
 }
 
+/* Pricing Billing Toggle */
+.pricing-toggle-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 45px;
+}
+
+.billing-cycle-label {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+    user-select: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.billing-cycle-label.active {
+    color: var(--text-main);
+    font-weight: 700;
+}
+
+.pricing-switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.pricing-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.pricing-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid var(--glass-border);
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 34px;
+}
+
+.pricing-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #ffffff;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pricing-switch input:checked + .pricing-slider {
+    background: linear-gradient(135deg, #2c34ac, var(--highlight));
+    border-color: var(--highlight);
+}
+
+.pricing-switch input:checked + .pricing-slider:before {
+    transform: translateX(26px);
+}
+
+.badge-guaranteed {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.18), rgba(37, 211, 102, 0.18));
+    color: #00d4aa;
+    border: 1px solid rgba(0, 212, 170, 0.35);
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-left: 8px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 8px rgba(0, 212, 170, 0.15);
+    display: inline-block;
+}
+
+.annual-billed-hint {
+    display: none;
+    font-size: 0.85rem;
+    color: var(--accent-success);
+    margin-top: -15px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
 .pricing-card {
     background: var(--glass);
     border: 1px solid var(--glass-border);
@@ -588,7 +705,7 @@ a:hover {
 .plan-price {
     font-size: 3rem;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: var(--highlight);
 }
 
@@ -1091,10 +1208,30 @@ body.light-mode .best-value {
     background: var(--primary);
 }
 
-body.light-mode .btn-pricing {
-    background: rgba(44, 52, 172, 0.05);
+body.light-mode .plan-name {
+    color: #0F172A;
+}
+
+body.light-mode .plan-price {
     color: var(--primary);
-    border: 1px solid rgba(44, 52, 172, 0.1);
+}
+
+body.light-mode .plan-price span {
+    color: var(--text-muted);
+}
+
+body.light-mode .plan-features li {
+    color: var(--text-muted);
+}
+
+body.light-mode .plan-features li i {
+    color: var(--primary);
+}
+
+body.light-mode .btn-pricing {
+    background: rgba(37, 99, 235, 0.06);
+    color: var(--primary);
+    border: 1px solid rgba(37, 99, 235, 0.18);
 }
 
 body.light-mode .btn-pricing:hover {
@@ -1112,11 +1249,12 @@ body.light-mode .btn-get-started,
 body.light-mode .btn-app,
 body.light-mode .php-email-form button {
     color: #fff !important;
+    background: var(--primary);
 }
 
 body.light-mode .php-email-form button:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(116, 181, 252, 0.5);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
     background: #fff;
     color: var(--primary) !important;
 }
@@ -1124,6 +1262,11 @@ body.light-mode .php-email-form button:hover {
 body.light-mode .btn-cta {
     color: var(--primary) !important;
     background: #fff !important;
+}
+
+body.light-mode .cta-section {
+    background: linear-gradient(135deg, #3730A3, #1E1B4B);
+    box-shadow: 0 20px 40px rgba(55, 48, 163, 0.25);
 }
 
 body.light-mode .cta-section h2,
@@ -1134,32 +1277,55 @@ body.light-mode .cta-section .cta-note {
 
 body.light-mode .btn-secondary {
     color: var(--primary) !important;
-    background: rgba(44, 52, 172, 0.08) !important;
-    border: 1px solid rgba(44, 52, 172, 0.2) !important;
+    background: rgba(37, 99, 235, 0.08) !important;
+    border: 1px solid rgba(37, 99, 235, 0.2) !important;
 }
 
 body.light-mode .btn-secondary:hover {
-    background: rgba(44, 52, 172, 0.15) !important;
+    background: rgba(37, 99, 235, 0.15) !important;
 }
 
 body.light-mode .feature-card p,
-body.light-mode .plan-features li,
 body.light-mode .step-card p {
     color: var(--text-muted);
+}
+
+body.light-mode .step-card h3 {
+    color: #0F172A;
 }
 
 body.light-mode .features-section,
 body.light-mode .pricing-section,
 body.light-mode .how-it-works-section {
-    background: #fff;
+    background: var(--bg-dark);
 }
 
 body.light-mode .how-it-works-section {
-    background: radial-gradient(circle at top right, rgba(44, 52, 172, 0.05), transparent);
+    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.05), transparent);
+}
+
+body.light-mode .pricing-slider {
+    background-color: #e2e8f0;
+    border-color: #cbd5e1;
+}
+
+body.light-mode .pricing-switch input:checked + .pricing-slider {
+    background: linear-gradient(135deg, #2563EB, #3B82F6);
+    border-color: #2563EB;
+}
+
+body.light-mode .badge-guaranteed {
+    background: rgba(16, 185, 129, 0.12);
+    color: #059669;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+body.light-mode .annual-billed-hint {
+    color: #059669;
 }
 
 body.light-mode #contact {
-    background: #f8f9fa;
+    background: #f1f5f9;
 }
 
 body.light-mode #footer {
@@ -1596,7 +1762,9 @@ body.light-mode #footer .social-links a.whatsapp:hover {
 /* WhatsApp Showcase Section */
 .whatsapp-showcase-section {
     padding: 100px 0;
-    background: linear-gradient(180deg, #000000 0%, #060b18 50%, #000000 100%);
+    background: var(--bg-wa-showcase);
+    border-top: 1px solid var(--border-divider);
+    border-bottom: 1px solid var(--border-divider);
     position: relative;
     overflow: hidden;
 }
@@ -1607,11 +1775,33 @@ body.light-mode #footer .social-links a.whatsapp:hover {
     border-radius: 32px;
     padding: 50px 40px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
 }
 
-/* Phone Mockup Frame */
+/* Phone Mockup Frame & Glow */
+.whatsapp-phone-glow-wrapper {
+    position: relative;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.whatsapp-phone-glow-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.08) 0%, rgba(37, 211, 102, 0.06) 45%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+    border-radius: 50%;
+}
+
 .whatsapp-phone-frame {
+    position: relative;
+    z-index: 1;
     background: #0b141a;
     border: 2px solid rgba(255, 255, 255, 0.15);
     border-radius: 28px;
@@ -1959,19 +2149,22 @@ body.light-mode #footer .social-links a.whatsapp:hover {
 
 /* Light Mode Overrides for WhatsApp Integration */
 body.light-mode .whatsapp-showcase-section {
-    background: linear-gradient(180deg, #f8f9fa 0%, #edf2f7 50%, #f8f9fa 100%);
+    background: var(--bg-wa-showcase);
+    border-top: 1px solid var(--border-divider);
+    border-bottom: 1px solid var(--border-divider);
 }
 
 body.light-mode .whatsapp-showcase-wrapper {
     background: #ffffff;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-divider);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.06);
 }
 
 body.light-mode .whatsapp-floating-tooltip {
     background: #ffffff;
-    color: #1a1a1a;
+    color: var(--text-main);
     border-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 body.light-mode .whatsapp-tooltip-arrow {
@@ -1980,23 +2173,23 @@ body.light-mode .whatsapp-tooltip-arrow {
 }
 
 body.light-mode .whatsapp-tooltip-text {
-    color: #333333;
+    color: var(--text-main);
 }
 
 body.light-mode .whatsapp-access-box {
-    background: #f1f5f9;
-    border-color: rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    border: 1px solid var(--border-divider);
 }
 
 body.light-mode .wa-benefit-text h4,
 body.light-mode .wa-cta-box h4 {
-    color: #1a1a1a;
+    color: var(--text-main);
 }
 
 body.light-mode .wa-hero-description,
 body.light-mode .wa-benefit-text p,
 body.light-mode .wa-cta-trust-note {
-    color: rgba(0, 0, 0, 0.65);
+    color: var(--text-muted);
 }
 
 /* Responsive Overrides */
@@ -2060,5 +2253,20 @@ body.light-mode .wa-cta-trust-note {
         font-size: 1.1rem;
         margin-bottom: 12px;
         text-align: center;
+    }
+
+    .pricing-toggle-wrapper {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .billing-cycle-label {
+        font-size: 0.95rem;
+    }
+
+    .badge-guaranteed {
+        font-size: 0.72rem;
+        padding: 3px 8px;
     }
 }

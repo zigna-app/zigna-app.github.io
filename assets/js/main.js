@@ -192,6 +192,78 @@
             setTheme(newTheme);
             localStorage.setItem('theme', newTheme);
         });
+
+        // Billing Cycle Toggle (Monthly / Annual)
+        const billingToggle = $('#billing-toggle');
+        const monthlyLabel = $('.billing-cycle-label.monthly');
+        const annualLabel = $('.billing-cycle-label.annual');
+
+        function updateBillingCycle(isAnnual) {
+            if (isAnnual) {
+                monthlyLabel.removeClass('active');
+                annualLabel.addClass('active');
+
+                $('.pricing-card').each(function () {
+                    const card = $(this);
+                    const priceEl = card.find('.price-val');
+                    const annualPrice = priceEl.attr('data-annual');
+                    if (annualPrice) {
+                        priceEl.text(annualPrice);
+                    }
+
+                    const hintEl = card.find('.annual-billed-hint');
+                    const annualHint = hintEl.attr('data-annual-hint');
+                    if (annualHint) {
+                        hintEl.text(annualHint).slideDown(200);
+                    }
+
+                    const btn = card.find('.btn-pricing');
+                    const baseHref = btn.attr('data-base-href');
+                    if (baseHref) {
+                        btn.attr('href', baseHref + '&billing=annual');
+                    }
+                });
+            } else {
+                annualLabel.removeClass('active');
+                monthlyLabel.addClass('active');
+
+                $('.pricing-card').each(function () {
+                    const card = $(this);
+                    const priceEl = card.find('.price-val');
+                    const monthlyPrice = priceEl.attr('data-monthly');
+                    if (monthlyPrice) {
+                        priceEl.text(monthlyPrice);
+                    }
+
+                    const hintEl = card.find('.annual-billed-hint');
+                    hintEl.slideUp(200, function () {
+                        $(this).text('');
+                    });
+
+                    const btn = card.find('.btn-pricing');
+                    const baseHref = btn.attr('data-base-href');
+                    if (baseHref) {
+                        btn.attr('href', baseHref);
+                    }
+                });
+            }
+        }
+
+        billingToggle.on('change', function () {
+            updateBillingCycle($(this).is(':checked'));
+        });
+
+        monthlyLabel.on('click', function () {
+            if (billingToggle.is(':checked')) {
+                billingToggle.prop('checked', false).trigger('change');
+            }
+        });
+
+        annualLabel.on('click', function () {
+            if (!billingToggle.is(':checked')) {
+                billingToggle.prop('checked', true).trigger('change');
+            }
+        });
     });
 
 })(jQuery);
