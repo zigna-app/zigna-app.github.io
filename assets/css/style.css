@@ -1206,13 +1206,26 @@ body.light-mode #header {
 }
 
 body.light-mode .hero-section {
-    background: linear-gradient(-45deg, #f0f4ff, #ffffff, #e6eeff, #f0f4ff);
+    background: #F8FAFC;
+    animation: none;
 }
 
 body.light-mode .hero-title {
-    background: linear-gradient(to right, #1a1a1a, var(--primary));
-    background-clip: text;
-    -webkit-background-clip: text;
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: #0F172A;
+}
+
+body.light-mode .hero-title .highlight {
+    color: var(--primary);
+    animation: none;
+    text-shadow: none;
+    -webkit-text-fill-color: initial;
+}
+
+body.light-mode .hero-circles .circle {
+    opacity: 0.12;
+    border-color: rgba(37, 99, 235, 0.08);
 }
 
 body.light-mode .feature-card,
@@ -2113,26 +2126,30 @@ body.light-mode #footer .social-links a.whatsapp:hover {
 }
 
 .whatsapp-qr-card {
-    background: #ffffff;
-    padding: 12px;
-    border-radius: 16px;
+    background: #151B2B;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 14px;
+    border-radius: 20px;
     display: inline-block;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .wa-qr-img {
-    border-radius: 8px;
+    border-radius: 12px;
     display: block;
+    background: #ffffff;
+    padding: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .wa-qr-label {
     display: block;
-    color: #0b141a;
-    font-size: 0.72rem;
-    font-weight: 700;
-    margin-top: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
+    color: #F0F4F8;
+    font-size: 0.74rem;
+    font-weight: 600;
+    margin-top: 10px;
+    letter-spacing: 0.4px;
+    opacity: 0.9;
 }
 
 .wa-cta-box h4 {
@@ -2219,6 +2236,22 @@ body.light-mode .wa-hero-description,
 body.light-mode .wa-benefit-text p,
 body.light-mode .wa-cta-trust-note {
     color: var(--text-muted);
+}
+
+body.light-mode .whatsapp-qr-card {
+    background: #ffffff;
+    border: 1px solid var(--border-divider);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+body.light-mode .wa-qr-img {
+    background: #ffffff;
+    box-shadow: none;
+    padding: 4px;
+}
+
+body.light-mode .wa-qr-label {
+    color: #1E293B;
 }
 
 /* Responsive Overrides */
