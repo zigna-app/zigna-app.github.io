@@ -209,7 +209,7 @@ a:hover {
     background: var(--highlight);
     color: #ffffff;
     padding: 14px 30px;
-    border-radius: 14px;
+    border-radius: 12px;
     font-weight: 800;
     font-size: 1.05rem;
     text-decoration: none;
@@ -236,7 +236,7 @@ a:hover {
     background: rgba(37, 211, 102, 0.08);
     color: #25D366 !important;
     padding: 14px 26px;
-    border-radius: 14px;
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.05rem;
     text-decoration: none;
@@ -1740,7 +1740,7 @@ body.light-mode #footer .social-links a.whatsapp:hover {
     background: rgba(13, 17, 23, 0.95);
     color: #ffffff;
     padding: 12px 18px;
-    border-radius: 14px;
+    border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     border: 1px solid var(--glass-border);
     backdrop-filter: blur(12px);
@@ -2092,7 +2092,7 @@ body.light-mode #footer .social-links a.whatsapp:hover {
 .wa-benefit-icon {
     width: 48px;
     height: 48px;
-    border-radius: 14px;
+    border-radius: 12px;
     background: linear-gradient(135deg, rgba(37, 211, 102, 0.2), rgba(18, 140, 126, 0.2));
     border: 1px solid rgba(37, 211, 102, 0.3);
     display: flex;

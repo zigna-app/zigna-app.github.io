@@ -33,6 +33,8 @@ parallel_localization: true
 markdown: kramdown
 permalink: pretty
 
+include: [.well-known]
+
 # Exclude directories and files
 exclude:
   - Gemfile
