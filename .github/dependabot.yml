@@ -5,21 +5,29 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 3
+      day: "thursday"
+      time: "09:00"
+      timezone: "America/Santiago"
+    open-pull-requests-limit: 10
     groups:
-      ruby-dependencies:
+      minor-and-patch:
         patterns:
           - "*"
+        update-types:
+          - "patch"
+          - "minor"
 
   # GitHub Actions workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "friday"
-    open-pull-requests-limit: 2
+      day: "thursday"
+      time: "09:00"
+      timezone: "America/Santiago"
+    open-pull-requests-limit: 5
     groups:
       actions-dependencies:
         patterns:
           - "*"
+
