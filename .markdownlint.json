@@ -1,6 +1,8 @@
 {
-  "MD001": false,
-  "MD003": false,
+  "MD001": true,
+  "MD003": {
+    "style": "atx"
+  },
   "MD004": {
     "style": "dash"
   },
@@ -8,38 +10,59 @@
     "indent": 2
   },
   "MD013": false,
-  "MD022": false,
+  "MD022": true,
   "MD024": false,
-  "MD029": false,
-  "MD032": false,
+  "MD029": {
+    "style": "one"
+  },
+  "MD032": true,
   "MD033": {
     "allowed_elements": [
+      "a",
+      "assistant",
+      "blockquote",
+      "br",
+      "button",
+      "code",
       "details",
       "div",
+      "form",
       "h1",
       "h2",
       "h3",
+      "h4",
       "header",
-      "img",
+      "hr",
       "i",
-      "main",
-      "p",
-      "strong",
-      "section",
-      "span",
-      "a",
-      "ul",
-      "li",
-      "form",
+      "img",
       "input",
+      "kbd",
+      "li",
+      "main",
+      "ol",
+      "p",
+      "section",
+      "strong",
+      "span",
+      "summary",
+      "system",
+      "table",
+      "tbody",
+      "td",
       "textarea",
-      "button",
-      "summary"
+      "th",
+      "thead",
+      "tr",
+      "ul",
+      "user"
     ]
   },
   "MD036": false,
-  "MD040": false,
+  "MD040": true,
   "MD041": false,
-  "MD045": false,
-  "MD060": false
+  "MD045": true,
+  "MD047": true,
+  "MD060": {
+    "style": "any"
+  }
 }
