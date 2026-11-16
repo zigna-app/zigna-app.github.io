@@ -991,6 +991,11 @@ a:hover {
     margin: 0;
 }
 
+/* Scale dark-mode logo (1024x380 viewBox) proportionally to match light-mode (1024x273) wordmark height: 35 * 380 / 273 ~= 49px */
+body:not(.light-mode) #header .logo img {
+    max-height: 49px;
+}
+
 /* Header Tools (Language & Theme) */
 .header-tools {
     margin-left: auto;
