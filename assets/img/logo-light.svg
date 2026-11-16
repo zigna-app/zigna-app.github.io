@@ -18,7 +18,7 @@
         <circle cx="512" cy="512" r="489" fill="transparent" stroke="transparent" stroke-width="2.65" />
 
         <!-- Layer 3: Blue filled circle, radius ~79 points -->
-        <circle cx="512" cy="512" r="79" fill="#2c34ac" />
+        <circle cx="512" cy="512" r="79" fill="#091C99" />
 
         <!-- Layer 4 & 5: WHITE rings FIRST (full circles, no mask) -->
         <circle cx="512" cy="512" r="211" fill="none" stroke="transparent" stroke-width="95" />
@@ -26,8 +26,8 @@
 
         <!-- Layer 4 & 5: BLUE rings on top, masked to show only left and right sides -->
         <g mask="url(#blueAreasMask)">
-            <circle cx="512" cy="512" r="211" fill="none" stroke="#2c34ac" stroke-width="95" />
-            <circle cx="512" cy="512" r="370" fill="none" stroke="#2c34ac" stroke-width="95" />
+            <circle cx="512" cy="512" r="211" fill="none" stroke="#091C99" stroke-width="95" />
+            <circle cx="512" cy="512" r="370" fill="none" stroke="#091C99" stroke-width="95" />
         </g>
     </g>
 
