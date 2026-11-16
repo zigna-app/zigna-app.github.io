@@ -4,7 +4,7 @@
 --------------------------------------------------------------*/
 
 :root {
-    --primary: #2c34ac;
+    --primary: #091C99;
     --primary-dark: #080b1eff;
     --secondary: #00d4aa;
     /* Official Zigna Green */
@@ -426,7 +426,7 @@ a:hover {
 /* CTA Section */
 .cta-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, #2c34ac, #313ac0);
+    background: linear-gradient(135deg, #091C99, #313ac0);
     border-radius: 40px;
     margin: 40px;
     text-align: center;
@@ -617,7 +617,7 @@ a:hover {
 }
 
 .pricing-switch input:checked + .pricing-slider {
-    background: linear-gradient(135deg, #2c34ac, var(--highlight));
+    background: linear-gradient(135deg, #091C99, var(--highlight));
     border-color: var(--highlight);
 }
 
@@ -989,6 +989,11 @@ a:hover {
 #header .logo img {
     max-height: 35px;
     margin: 0;
+}
+
+/* Scale dark-mode logo (1024x380 viewBox) proportionally to match light-mode (1024x273) wordmark height: 35 * 380 / 273 ~= 49px */
+body:not(.light-mode) #header .logo img {
+    max-height: 49px;
 }
 
 /* Header Tools (Language & Theme) */
@@ -1405,7 +1410,7 @@ body.light-mode .main-nav .drop-down ul a {
 }
 
 body.light-mode .mobile-nav-toggle i {
-    color: #2c34ac;
+    color: #091C99;
 }
 
 body.light-mode .tool-list .drop-down ul {
@@ -1414,7 +1419,7 @@ body.light-mode .tool-list .drop-down ul {
 }
 
 body.light-mode .tool-list a {
-    color: #2c34ac !important;
+    color: #091C99 !important;
 }
 
 body.light-mode .back-to-top {
